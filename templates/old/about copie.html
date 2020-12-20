@@ -1,0 +1,207 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Orlane Houzet | About
+{% endblock %}
+
+{% block main %}
+
+	<!--RAPPEL DE L'ONGLET<h1>About</h1>-->
+			<!-- who, what 
+			<div class="overflow-auto">...</div>-->
+
+			<!-- timeline 
+						<div class="timeline">
+						  <div class="container left">
+						    <div class="content">
+						      <h2>2017</h2>
+						      <p>Lorem ipsum..</p>
+						    </div>
+						  </div>
+						  <div class="container right">
+						    <div class="content">
+						      <h2>2016</h2>
+						      <p>Lorem ipsum..</p>
+						    </div>
+						  </div>
+						</div>-->
+
+	<div class="row">
+	<div class="col-5">
+		<!-- Intro / Who/What...-->
+		<div class="jumbotron jumbotron-fluid">
+		  <div class="container">
+		    <h1 class="display-6">Data Scientist</h1>
+		    <hr class="my-4">
+		    <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.
+		    I am a programmer and data scientist.
+			<br/>I've just graduated from a <strong>Master degree</strong> and I am eager to find challenges as I am passionned by new technologies.</p>
+		  </div>
+		</div>
+	</div>
+
+
+	<div class="col-7">
+		<!-- Timeline -->
+	    <div class="timeline">
+            <div class="container-timeline left">
+                <div class="content">
+                        <h2>2020</h2>
+                        {% if lang == 'en' %}
+                        	<ul class="marker-timeline">
+                        		<li>
+                        			<p><a target="_blank" class="about-link" href="https://www.udemy.com/course/complete-machine-learning-and-data-science-zero-to-mastery/">ZeroToMastery course</a>: Machine Learning course with structured mini projects.
+		                            </p>
+                        		</li>
+                        		<li>
+                        			<p><a target="_blank" class="about-link" href="https://www.udemy.com/course/complete-machine-learning-and-data-science-zero-to-mastery/">Master Degree</a>: Machine Learning course with structured mini projects.
+		                            </p>
+                        		</li>
+                        	</ul>
+                        {% else %}
+                        	<ul class="marker-timeline">
+                        		<li>
+                        			<p><a target="_blank" class="about-link" href="https://www.udemy.com/course/complete-machine-learning-and-data-science-zero-to-mastery/">Cours ZeroToMastery</a>: Python-Kurs mit strukturierten Mini-Projekten.
+		                            </p>
+                        		</li>
+                        		<li>
+                        			<p><a target="_blank" class="about-link" href="https://www.udemy.com/course/complete-machine-learning-and-data-science-zero-to-mastery/">Master Degree</a>: Machine Learning course with structured mini projects.
+		                            </p>
+                        		</li>
+                        	</ul>
+                        {% endif %}
+                </div>
+            </div>
+            <div class="container-timeline right">
+                <div class="content">
+                        <h2>2019</h2>
+                        {% if lang == 'en' %}
+                            <ul class="marker-timeline">
+                                <li>
+                                    <a target="_blank" class="about-link" href="https://www.edx.org/course/cs50s-introduction-to-computer-science">CS50's Intro to Computer Science</a>:
+                                    HarvardX course with projects in C, HTML, CSS, JavaScript, Python and SQL.
+                                </li>
+                                <li>
+                                    <a target="_blank" class="about-link" href="https://dash.generalassemb.ly/">General Assembly's Dash</a>:
+                                    Web development course in HTML, CSS and JavaScript.
+                                </li>
+                                <li>
+                                    <a target="_blank" class="about-link" href="https://www.udacity.com/course/intro-to-data-science--ud359">Udacity's Intro to Data Science</a>:
+                                    Introduction to data wrangling, data analysis, data visualization and MapReduce in Python.
+                                </li>
+                                <li>
+                                    <a target="_blank" class="about-link" href="https://www.udacity.com/course/data-wrangling-with-mongodb--ud032">Udacity's Data Wrangling with MongoDB</a>:
+                                    Course on data extraction, incl. web scraping, data quality checking and MongoDB.
+                                </li>
+                            </ul>
+                        {% else %}
+                            <ul class="marker-timeline">
+                                <li>
+                                    <a target="_blank" class="about-link" href="https://www.edx.org/course/cs50s-introduction-to-computer-science">CS50's Intro to Computer Science</a>:
+                                    HarvardX-Kurs mit Projekten in C, HTML, CSS, JavaScript, Python und SQL.
+                                </li>
+                                <li>
+                                    <a target="_blank" class="about-link" href="https://dash.generalassemb.ly/">General Assembly's Dash</a>:
+                                    Webentwicklungskurs in HTML, CSS und JavaScript.
+                                </li>
+                                <li>
+                                    <a target="_blank" class="about-link" href="https://www.udacity.com/course/intro-to-data-science--ud359">Udacity's Intro to Data Science</a>:
+                                    Einführung in Data Wrangling, Data Analysis, Data Visualization und MapReduce in Python.
+                                </li>
+                                <li>
+                                    <a target="_blank" class="about-link" href="https://www.udacity.com/course/data-wrangling-with-mongodb--ud032">Udacity's Data Wrangling with MongoDB</a>:
+                                    Kurs zu Data Extraction, inkl. Web Scraping, Data Quality Checking und MongoDB.
+                                </li>
+                            </ul>
+                        {% endif %}
+                </div>
+            </div>
+            <div class="container-timeline left">
+                <div class="content">
+                        <h2>2019</h2>
+                        {% if lang == 'en' %}
+                            <ul class="marker-timeline">
+                                <li>
+                                    <a target="_blank" class="about-link" href="https://www.udacity.com/course/data-scientist-nanodegree--nd025">Udacity's Data Scientist Nanodegree</a>:
+                                    In 2019, this course also included <a target="_blank" class="about-link" href="https://www.udacity.com/course/machine-learning-engineer-nanodegree--nd009t">
+                                    Udacity's Machine Learning Engineer Nanodegree</a>; Machine learning, deep learning, software
+                                    and data engineering, recommendation systems.
+                                </li>
+                                <li>
+                                    Data Science Basics seminar as part of my Master's degree: Introduction to supervised ML
+                                    and academic final project in time series forecasting.
+                                </li>
+                            </ul>
+                        {% else %}
+                            <ul class="marker-timeline">
+                                <li>
+                                    <a target="_blank" class="about-link" href="https://www.udacity.com/course/data-scientist-nanodegree--nd025">Udacity's Data Scientist Nanodegree</a>:
+                                    Dieser Kurs beinhaltete 2019 auch den <a target="_blank" class="about-link" href="https://www.udacity.com/course/machine-learning-engineer-nanodegree--nd009t">
+                                    Machine Learning Engineer Nanodegree</a>; Machine Learning, Deep Learning, Software
+                                    and Data Engineering, Recommendation Systems.
+                                </li>
+                                <li>
+                                    Data Science Basics Seminar als Teil meines Masterstudiengangs: Einführung in Supervised ML
+                                    und wissenschaftliches Abschlussprojekt in Time Series Forecasting.
+                                </li>
+                            </ul>
+                        {% endif %}
+                </div>
+            </div>
+            <div class="container-timeline right">
+                <div class="content">
+                        <h2>2020</h2>
+                        {% if lang == 'en' %}
+                            <p><a target="_blank" class="about-link" href="https://www.udacity.com/course/data-structures-and-algorithms-in-python--ud513">
+                                Udacity's Intro to Data Structures and Algorithms</a>:
+                                Course on different algorithms and data structures, incl. time- and space-efficiency,
+                                search and sort algorithms, maps, hashing, trees and list-based collections.
+                            </p>
+                        {% else %}
+                            <p><a target="_blank" class="about-link" href="https://www.udacity.com/course/data-structures-and-algorithms-in-python--ud513">
+                                Udacity's Intro to Data Structures and Algorithms</a>:
+                                Kurs zu unterschiedlichen Algorithmen und Datenstrukturen, inkl. Time- and Space-Efficiency,
+                                Search and Sort Algorithms, Maps, Hashing, Trees und List-Based Collections.
+                            </p>
+                        {% endif %}
+                </div>
+            </div>
+        </div>
+
+     </div>
+     </div>
+	<!-- Section 1 : comporte les cours que j'ai fais -->
+	<!--<section>
+		<h1 class="coursework">Coursework</h1>
+		<h2>Statistics</h2>
+		<ul>
+			<li>Complete Machine Learning: ZeroToMastery</li>
+			<li>Dauphine: Analyse de données et Data Mining</li>
+		</ul>
+
+		<h2>Java</h2>
+		<ul>
+			<li>Complete Machine Learning: ZeroToMastery</li>
+			<li>Dauphine: Analyse de données et Data Mining</li>
+		</ul>
+
+		<h2>Python</h2>
+		<ul>
+			<li>Complete Machine Learning: ZeroToMastery</li>
+			<li>Dauphine: Analyse de données et Data Mining</li>
+		</ul>
+
+		<h2>Machine Learning</h2>
+		<ul>
+			<li>Complete Machine Learning: ZeroToMastery</li>
+			<li>Dauphine: Analyse de données et Data Mining</li>
+		</ul>
+
+		<h2>HTML/CSS</h2>
+		<ul>
+			<li>OpenClassrooms</li>
+			<li>Dauphine: Analyse de données et Data Mining</li>
+		</ul>
+	</section>-->
+
+{% endblock %}

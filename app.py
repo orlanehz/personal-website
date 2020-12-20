@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, url_for
 
 # Configure application
 app = Flask(__name__)
@@ -7,7 +7,44 @@ app = Flask(__name__)
 @app.route('/', methods=['POST', 'GET'])
 def index():
 
-    greeting = 'Welcome to My Data Science Portfolio Website'
-
     return render_template('/index.html',
-                            greeting=greeting)
+                            id='index')
+
+@app.route('/about', methods=['POST', 'GET'])
+def about():
+
+    # default language if just portfolio is entered in url
+    lang = 'en'
+
+    return render_template('about.html')
+
+
+
+
+
+@app.route('/portfolio', methods=['POST', 'GET'])
+def portfolio():
+
+    # default language if just portfolio is entered in url
+    lang = 'en'
+
+    return render_template('portfolio.html')
+
+
+@app.route('/blog', methods=['POST', 'GET'])
+def blog():
+
+    # default language if just portfolio is entered in url
+    lang = 'en'
+
+    return render_template('blog.html',
+                            lang=lang)
+
+@app.route('/contact', methods=['POST', 'GET'])
+def contact():
+
+    # default language if just portfolio is entered in url
+    lang = 'en'
+
+    return render_template('contact.html',
+    						lang=lang)

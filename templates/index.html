@@ -1,17 +1,52 @@
 {% extends "layout.html" %}
 
 {% block title %}
-    My Portfolio Website
+    Orlane Houzet
 {% endblock %}
 
 {% block main %}
 
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-auto">
-                <h3>{{ greeting }}</h3>
-            </div>
-        </div>
-    </div>
+	<section class="home-content">
+
+		<!-- Intro -->
+		<div class="description">
+			<div class="row">
+	            <img src="/static/img/pastille_houzet.png" class="img-top" alt="...">
+
+	    		<div class="jumbotron p-4 p-md-5">
+	    		  <div class="container">
+	    		    <h1 class="display-6">DATA SCIENCE & CREATIVE INNOVATION</h1>
+	    		    <hr class="my-4">
+	    		    <p class="lead">
+	    		    	I am a Data Scientist and I am eager to become a professional of the creative technology.
+	    			</p>
+	    		  </div>
+	    		</div>
+	        </div>
+	        
+	    </div>
+
+
+		<!-- My Latest Project -->
+	    <div class="row">
+	        <div class="row justify-content-center">
+	            <div class="row">
+	                <h3>My Latest Projects</h3>
+	            </div>
+	            <div class="row">
+		            <div class="media">
+					  <img src="..." class="mr-3" alt="...">
+					  <div class="media-body">
+					    <h5 class="mt-0">Media heading</h5>
+					    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+					  </div>
+					</div>
+				</div>	
+	        </div>
+	    </div>
+	</section>
+	
+
+
 
 {% endblock %}
