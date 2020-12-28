@@ -40,6 +40,11 @@ header
     /*fixed-top sticky-top*/
 }
 
+.navbar-toggler-icon
+{
+  color: red;
+}
+
 #index-navbarbrand
 {
     
@@ -316,6 +321,38 @@ p a:hover
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+
+
+
+
+/* 28 Dec */
+/*#v-pills-skills, #v-pills-passions
+{
+  width: 100%;height: 100%;display: flex;flex-direction: column;justify-content: space-around;max-height: 800px;margin: 0px auto;
+  d-flex flex-row justify-content-center;
+}
+*/
+
+.pill, .pill-title
+{
+  display: flex; 
+  justify-content: center; 
+  flex-wrap: wrap; margin-bottom: 1%;
+}
+
+.badge-pill
+{
+  margin: 1% 5px;
+
+}
+
+
+/* About me. Intro */
+.btn-link, .btn-link:hover
+{
+    color: #495057;
 }
 
 
