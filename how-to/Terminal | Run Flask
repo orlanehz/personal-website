@@ -1,5 +1,5 @@
-(base) orlanehouzet@MacBook-Air-de-orlane ~ % cd Desktop/my-professional-project/website-project 
-(base) orlanehouzet@MacBook-Air-de-orlane website-project % . venv/bin/activate
+(base) orlanehouzet@MacBook-Air-de-orlane ~ % cd projects/website
+(base) orlanehouzet@MacBook-Air-de-orlane website-project % . env/bin/activate
 (venv) (base) orlanehouzet@MacBook-Air-de-orlane website-project % export FLASK_ENV=development
 (venv) (base) orlanehouzet@MacBook-Air-de-orlane website-project % flask run
  * Environment: production
@@ -15,9 +15,10 @@
 
 
 
-
-
-
+cd projects/website
+. env/bin/activate
+export FLASK_ENV=development
+flask run
 
 
 
