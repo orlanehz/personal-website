@@ -335,7 +335,7 @@ p a:hover
 }
 */
 
-.pill, .pill-title
+/*.pill, .pill-title
 {
   display: flex; 
   justify-content: center; 
@@ -346,7 +346,7 @@ p a:hover
 {
   margin: 1% 5px;
 
-}
+}*+
 
 
 /* About me. Intro */
@@ -355,4 +355,8 @@ p a:hover
     color: #495057;
 }
 
+.pill-career
+{
+  margin:20px;
+}
 
