@@ -1,17 +1,6 @@
 body
 {
-  background-color: #f8f9fa;
-}
-
-.description
-{
-    min-height: 400px;
-}
-
-.col-auto
-{
-    position: absolute;
-    top: 50%;
+  background-color: var(--white);
 }
 
 header
@@ -25,19 +14,16 @@ header
   color: rgba(8, 8, 8, 1);
 }
 
+/* Layout - navbar */
 .navbar-brand, .navbar-brand:hover
 {
     color: rgba(8, 8, 8, 1);
 }
 
-
-
 .navbar
 {
-    background-color: #f8f9fa;
     min-height:50px;
-    /*position: fixed;*/
-    /*fixed-top sticky-top*/
+    background-color: var(--white);
 }
 
 .navbar-toggler-icon
@@ -48,16 +34,6 @@ header
 #index-navbarbrand
 {
     
-}
-
-.display-6
-{
-  font-size:20px;
-}
-
-.lead
-{
-  font-size:15px;
 }
 
 .nav-link
@@ -76,13 +52,6 @@ header
   text-decoration: underline;
 }
 
-a[href="/"]
-{
-  text-decoration: none;  /* à voir : ne fonctionne pas : 
-  je souhaite enlever le underline pour le bouton Home de nav*/
-}
-
-
 #index-btn-lang
 {
     color:#212529;
@@ -98,53 +67,11 @@ a[href="/"]
     border-radius:20px;
 }
 
-footer
-{
-  margin-top:25px;
-}
-
 .jumbotron
 {
-    background-color: #f8f9fa;
+    background-color: var(--white);
     color: rgba(8, 8, 8, 1);
-    height: 100%;
 }
-
-.my-4
-{
-    border: 1px solid #e9ecef;
-}
-
-
-
-
-
-p a
-{
-    color: rgba(8, 8, 8, 1);
-    text-decoration: underline;
-}
-
-p a:hover
-{
-    color: #007bff;
-}
-
-
-
-/* About */
-
-.home-content
-{
-  padding: 70px 100px;
-}
-
-.img-top
-{
-  height: 200px;
-}
-
-
 
 
 
@@ -279,22 +206,24 @@ p a:hover
     margin-left: -20px;
 }
 
-
-
-
-
-#portfolio-container {
-  position: relative;
-  width: 50%;
+.marker-timeline a
+{
+    color: rgba(8, 8, 8, 1);
+    text-decoration: underline;
 }
 
-.card-img {
-  display: block;
-  width: 100%;
-  height: auto;
+.marker-timeline a:hover
+{
+    color: blue;
 }
 
-.card-img-overlay {
+
+
+/* Portoflio */
+/* The overlay effect (full height and width) - lays on top of the container and over the image */
+
+
+.overlay {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -303,53 +232,52 @@ p a:hover
   height: 100%;
   width: 100%;
   opacity: 0;
-  transition: .5s ease;
-  background-color: #008CBA;
+  transition: .3s ease;
+  background-color: black;
 }
 
-#portfolio-container:hover .card-img-overlay {
-  opacity: 1;
+/* When you mouse over the container, fade in the overlay icon*/
+.card:hover .overlay {
+  opacity: 0.8;
 }
 
-.card_text {
+/* The icon inside the overlay is positioned in the middle vertically and horizontally */
+.icon {
   color: white;
-  font-size: 20px;
+  font-size: 100px;
   position: absolute;
-  top: 50%;
+  top: 20%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
 
-
-
-
-
-/* 28 Dec */
-/*#v-pills-skills, #v-pills-passions
-{
-  width: 100%;height: 100%;display: flex;flex-direction: column;justify-content: space-around;max-height: 800px;margin: 0px auto;
-  d-flex flex-row justify-content-center;
-}
-*/
-
-/*.pill, .pill-title
-{
-  display: flex; 
-  justify-content: center; 
-  flex-wrap: wrap; margin-bottom: 0%;
+/* When you move the mouse over the icon, change color */
+.bi:hover {
+  color: ;
 }
 
-.badge-pill
-{
-  margin: 1% 5px;
 
-}*+
 
 
 /* About me. Intro */
+.about-content
+{
+  margin-top:0px;
+}
+
+.nav-pills .nav-link
+{
+  margin: 5px;
+}
+
+.nav-pills .nav-link.active
+{
+  background-color: blue;
+  border-radius:10px;
+}
+
 .btn-link, .btn-link:hover
 {
     color: #495057;
