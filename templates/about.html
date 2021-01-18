@@ -7,13 +7,19 @@
 
 {% block main %}
 
-    <!-- This section is about to tell a bit about myself, like:
+	<!-- This section is about to tell a bit about myself, like:
         - my learning path
         - my career
         - my skills (key skills and further, links to my projects portfolio)
         - my passions (links to my blog)
     -->
-    <div class="about-content p-3">
+    
+    <div class="about-content p-3 px-5">
+
+    	<!-- Header -->
+    	<p class="p-md-3">Here are some of my curriculum choices!</p>
+
+    	<!-- About Section -->
     	<div class="row">
     		<!-- Navs -->
     		<div class="d-flex align-items-start">
@@ -27,189 +33,165 @@
 
 			  <div class="container-fluid tab-content" id="v-pills-tabContent">
 			    <div class="tab-pane fade show active" id="v-pills-intro" role="tabpanel" aria-labelledby="v-pills-intro-tab">
-			    	<!--
-				  	<div class="col-2 pt-5">
-			        	<img src="/static/img/pastille_houzet.png" class="img-fluid" style="max-width: 100%; height: auto; max-height: 100%; margin-top: 0%;" alt="Picture of me">
-			        </div>
-				  	<div class="jumbotron">
-		    		  <div class="container">
-		    		    <h1 class="display-4">DATA SCIENCE & CREATIVE INNOVATION</h1>
-		    		    <hr class="my-4">
-		    		    <p class="lead">I am a programmer and data scientist.
-		    		    	<br/>I've just graduated from a <strong>Master's Degree</strong> and I am eager to find challenges as I am passionned by new technologies.
-		    		    </p>
-		    		    <p>You can discover some of my curriculum choices.</p>
-		    		  </div>
-		    		</div>-->
+			    	<div class="row">
+			    		
+			    		<div class="col-sm-9">
+			    			<div class="accordion accordion-flush" id="accordionFlushExample">
+							  <div class="accordion-item">
+							    <h2 class="accordion-header" id="flush-headingOne">
+							      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+							        1. My decision for starting the course:
+							      </button>
+							    </h2>
+							    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+							      <div class="accordion-body">
+							      	<p>It was the summer of 2015, I’ve just had my high school diploma in sciences. I’ve always loved mathematics and I was good at chemistry and physics. I quickly found interest in Computer Science when I started my first year of a Bachelor’s degree at the University, it was a multidisciplinary training, ie. Maths, Chemistry, Physics and totally new to me, Computer Science.
+									<br/>I was good at writing lines of codes and understanding about math logic, linear algebra…</p>
+									<p>Just to let you know, although my father introduced me to new technologies from an early age, and I was always attracted by video games, drones, etc. (those « geek » things), I had no idea about what a terminal was and, most of all, I was so unconfident holding a Mac besides some of my classmates who had such a huge, dense sort of « geek » computer.</p>
 
-		    		<div class="accordion accordion-flush" id="accordionFlushExample">
-					  <div class="accordion-item">
-					    <h2 class="accordion-header" id="flush-headingOne">
-					      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-					        1. My decision for starting the course:
-					      </button>
-					    </h2>
-					    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-					      <div class="accordion-body">
-					      	It was the summer of 2015, I’ve just had my high school diploma in sciences. I’ve always loved mathematics and I was good at chemistry and physics. I quickly found interest in Computer Science when I started my first year of a Bachelor’s degree at the University, it was a multidisciplinary training, ie. Maths, Chemistry, Physics and totally new to me, Computer Science.
-							<br/>I was good at writing lines of codes and understanding about math logic, linear algebra… Just to let you know, although my father introduced me to new technologies from an early age, and I was always attracted by video games, drones, etc. (those « geek » things), I had no idea about what a terminal was and, most of all, I was so unconfident holding a Mac besides some of my classmates who had such a huge, dense sort of « geek » computer.
+									<p>It was at this point I started wondering whether I was planning a career in chemistry or in computer science. My decision was based on a hunch. I am a curious person but, I was so unsure and unconfident during a long time about this decision, you’ll know why later.
+									<br/>But then something has confirmed my future career choice. It’s only at the end of my Bachelor’s degree, in November 2017, thanks to a video from direction of L’Oréal, as I like Fashion industry and lot of other things, it made me realize that this industry was really interested by this still mysterious domain to me at this period, the Data Science : they needed engineers! (Quote: L’Oréal).
+									<br/>And even more, since I was reconsidering my training path, as I said before, I was so unsure about my decision. Sciences and more particularly Computer Science, is so much under-represented by women, as matter of fact, the fewer women, the fewer women. Those math, statistical or machine learning courses where I have once been the only girl sitting in a room of 25/30 persons, made me often feel out of place.</p>
+								  </div>
+							    </div>
+							  </div>
+							  <div class="accordion-item">
+							    <h2 class="accordion-header" id="flush-headingTwo">
+							      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+							        2. What I have achieved during my studies:
+							      </button>
+							    </h2>
+							    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+							      <div class="accordion-body">
+							      	<p>The key skill of my five-years studies is, to me, the ability to learn. 
+							      	<br/>This is the best qualification I would recommend to someone: to be a learner. And the second thing I would advise is, if you feel that you are able to learn something quickly, you have certainly some interest for it and then, this area of expertise could be well designed for you and for a career path, trust it!</p>
+									<p>I have acquired computing skills and I have considerably increased my analytical skills.
+									<br/>I’ve developed my coding skills through many project work (link to project/courses I’ve done—)
+									<br/>Thanks to a final year « part-time » Master’s degree, I have a little industry experience working on a range of problems/hands-on of data analytics technologies.
+									<br/>I adapt willingly to change as in just five years I’ve been to three different universities.</p>
 
-							<br/>It was at this point I started wondering whether I was planning a career in chemistry or in computer science. My decision was based on a hunch. I am a curious person but, I was so unsure and unconfident during a long time about this decision, you’ll know why later.
-							<br/>But then something has confirmed my future career choice. It’s only at the end of my Bachelor’s degree, in November 2017, thanks to a video from direction of L’Oréal, as I like Fashion industry and lot of other things, it made me realize that this industry was really interested by this still mysterious domain to me at this period, the Data Science : they needed engineers! (Quote: L’Oréal).
+									<p>What my expertise exactly is:
+									The fundamentals of Data Science, Machine Learning, Big Data and Visualisations.</p>
 
-							<br/>And even more, since I was reconsidering my training path, as I said before, I was so unsure about my decision. Sciences and more particularly Computer Science, is so much under-represented by women, as matter of fact, the fewer women, the fewer women. Those math, statistical or machine learning courses where I have once been the only girl sitting in a room of 25/30 persons, made me often feel out of place.
-						  </div>
-					    </div>
-					  </div>
-					  <div class="accordion-item">
-					    <h2 class="accordion-header" id="flush-headingTwo">
-					      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-					        2. What I have achieved during my studies:
-					      </button>
-					    </h2>
-					    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-					      <div class="accordion-body">
-					      	The key skill of my five-years studies is, to me, the ability to learn. This is the best qualification I would recommend to someone: to be a learner. And the second thing I would advise is, if you feel that you are able to learn something quickly, you have certainly some interest for it and then, this area of expertise could be well designed for you and for a career path, trust it!
-							<br/>I have acquired computing skills and I have considerably increased my analytical skills.
-							<br/>I’ve developed my coding skills through many project work (link to project/courses I’ve done—)
-							<br/>Thanks to a final year « part-time » Master’s degree, I have a little industry experience working on a range of problems/hands-on of data analytics technologies.
-							<br/>I adapt willingly to change as in just five years I’ve been to three different universities.
+									<p>I’ve been heading off to the University for the unique reason that I did not know at all what I wanted to do as higher education studies. I’ve intended to go to a chemical engineering school, but it was a costly and risky project to me.</p>
+								  </div>
+							    </div>
+							  </div>
+							  <div class="accordion-item">
+							    <h2 class="accordion-header" id="flush-headingThree">
+							      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+							        3. The outcome in the years following:
+							      </button>
+							    </h2>
+							    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+							      <div class="accordion-body">
+							      	<p>As I have just finished my Master’s in Computer Science and Analytics, I have to say that those five-years studies were so intense and difficult, I came close to dropping out, but it has ended up to be the best choice of career I could ever make, remember, we are in 2020 when I am writing those lines.</p>
+									<p>From now on, I am eager to integrate an inclusive and welcoming workplace, that’s all.</p>
+									<p>Since October 2020, I have taken time to digest my journey, as I couldn’t really express to someone what role was fitted to me in this all thing that is Data Science. 
+									Although I had the technical background, I had to demonstrate to people and, most of all, to myself, that I understand Machine Learning and apply these with coding.
+									<br/>I needed something to achieve this (link to my portfolio of project—).
+									<br/>To finish, as seen on many data science blog posts I red, I’ve found relevant to put my work in GitHub, Kaggle and in a proper web site!
+									<br/>Also, it was the best period (confinement round 2) to read all of my to-read list (link to books I am reading).</p>
 
-							<br/>What my expertise exactly is:
-							The fundamentals of Data Science, Machine Learning, Big Data and Visualisations
+									<p class="fw-bolder pt-3">Who am I now?</p>
+									<p>I consider myself to have the hacker spirit: it means passion, sociability and creativity.
+									<ul>
+										<li>Passion for the domain of new technologies.</li>
+										<li>Sociability, it is something relevant to me as I love sharing and having fun.</li>
+										<li>Creativity, the holy grail to me, this is what drove my decision to stay in the domain of Data Science, where we can create and apply IA/ML to answer to users uses cases in so many fields.</li>
+									</ul>
+										
+									<br/>And, as I’ve discovered the term in an article and I really appreciate it, I am eager to become what we call a creative technologist!</p>
 
-							<br/>I’ve been heading off to the University for the unique reason that I did not know at all what I wanted to do as higher education studies. I’ve intended to go to a chemical engineering school, but it was a costly and risky project to me.
-						  </div>
-					    </div>
-					  </div>
-					  <div class="accordion-item">
-					    <h2 class="accordion-header" id="flush-headingThree">
-					      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-					        3. The outcome in the years following:
-					      </button>
-					    </h2>
-					    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-					      <div class="accordion-body">
-					      	As I have just finished my Master’s in Computer Science and Analytics, I have to say that those five-years studies were so intense and difficult, I came close to dropping out, but it has ended up to be the best choice of career I could ever make, remember, we are in 2020 when I am writing those lines.
-							<br/>From now on, I am eager to integrate an inclusive and welcoming workplace, that’s all.
-							<br/>Since October 2020, I have taken time to digest my journey, as I couldn’t really express to someone what role was fitted to me in this all thing that is Data Science. 
-							Although I had the technical background, I had to demonstrate to people and, most of all, to myself, that I understand Machine Learning and apply these with coding.
-							<br/>I needed something to achieve this (link to my portfolio of project—).
-							<br/>To finish, as seen on many data science blog posts I red, I’ve found relevant to put my work in GitHub, Kaggle and in a proper web site!
-							<br/>Also, it was the best period (confinement round 2) to read all of my to-read list (link to books I am reading). 
+									<p>As I said before, I was not able at the end of my studies to tell what role was well fitted to me, then here it is: I am an analyst able to understand the stakes of Big Data. And I am eager to become a senior Data Scientist.</p>
 
-							<br/>Who am I now?
-							<br/>I consider myself to have the hacker spirit: it means passion, sociability and creativity.
-								<br/>Passion for the domain of new technologies.
-								<br/>Sociability, it is something relevant to me as I love sharing and having fun.
-								<br/>Creativity, the holy grail to me, this is what drove my decision to stay in the domain of Data Science, where we can create and apply IA/ML to answer to users uses cases in so many fields.
-							<br/>And, as I’ve discovered the term in an article and I really appreciate it, I am eager to become what we call a creative technologist !
-
-							<br/>As I said before, I was not able at the end of my studies to tell what role was well fitted to me, then here it is: I am an analyst able to understand the stakes of Big Data. And I am eager to become a senior Data Scientist.
-
-							<br/>Over the next few years, I would like to work in tech companies, where the core values are to innovate and collaborate. Either in France or abroad. I am also determined to improve all along with this new journey.
-							<br/>Last but not least, I envision to share my work and my feeling about what it is to work in this area. I would love to make use of my experience to guide other women and men.
-						   </div>
-					    </div>
-					  </div>
-					</div>
+									<p>Over the next few years, I would like to work in tech companies, where the core values are to innovate and collaborate. Either in France or abroad. I am also determined to improve all along with this new journey.
+									<br/>Last but not least, I envision to share my work and my feeling about what it is to work in this area. I would love to make use of my experience to guide other women and men.</p>
+								   </div>
+							    </div>
+							  </div>
+							</div>
+			    		</div>
+			    		<div class="col-sm-2">
+			    			<img src="/static/img/pastille_houzet.png" class="img-fluid"  alt="Picture of me" style="max-width: 300px;">
+			    		</div>
+			    	</div>
 			    </div>
 
 			    <div class="tab-pane fade" id="v-pills-learning" role="tabpanel" aria-labelledby="v-pills-learning-tab">
 			    	<!-- Timeline -->
 				    <div class="timeline">
 			            <div class="container-timeline left">
-			                <div class="content">
+			                <div class="content overflow-auto">
 			                        <h2>2020</h2>
-			                        {% if lang == 'en' %}
-			                        	<ul class="marker-timeline">
-			                        		<li>
-			                        			<p><a target="_blank" class="about-link" href="https://www.udemy.com/course/complete-machine-learning-and-data-science-zero-to-mastery/">ZeroToMastery: Complete Machine Learning</a>: Machine Learning course with structured mini projects.
-					                            </p>
-			                        		</li>
-			                        		<li>
-			                        			<p>Obtaining the <a target="_blank" class="about-link" href="https://dauphine.psl.eu/formations/masters/informatique/m2-informatique-decisionnelle">Master’s degree in Computer Science and Analytics from Paris-Dauphine University</a></p>
-			                        		</li>
-			                        		<li>
-			                        			<p>Finishing my one-year « part-time » at <a target="_blank" class="about-link" href="https://www.loreal.com/fr/science-et-technologie-beaute/recherche-innovation-au-service-beaute/">L’Oréal R&I.</a>
-					                            </p>
-			                        		</li>
-			                        	</ul>
-			                        {% else %}
-			                        	<ul class="marker-timeline">
-			                        		<li>
-			                        			<p><a target="_blank" class="about-link" href="https://www.udemy.com/course/complete-machine-learning-and-data-science-zero-to-mastery/">ZeroToMastery: Complete Machine Learning</a>: Machine Learning course with structured mini projects.
-					                            </p>
-			                        		</li>
-			                        		<li>
-			                        			<p>Obtaining the <a target="_blank" class="about-link" href="https://dauphine.psl.eu/formations/masters/informatique/m2-informatique-decisionnelle">Master’s degree in Computer Science and Analytics from Paris-Dauphine University</a></p>
-			                        		</li>
-			                        		<li>
-			                        			<p>Finishing my one-year « part-time » at <a target="_blank" class="about-link" href="https://www.loreal.com/fr/science-et-technologie-beaute/recherche-innovation-au-service-beaute/">L’Oréal R&I.</a>
-					                            </p>
-			                        		</li>
-			                        	</ul>
-			                        {% endif %}
+		                        	<ul class="marker-timeline">
+		                        		<li>
+		                        			<p><a target="_blank" class="about-link" href="https://www.udemy.com/course/complete-machine-learning-and-data-science-zero-to-mastery/">ZeroToMastery: Complete Machine Learning</a>: Machine Learning course with structured mini projects.
+				                            </p>
+		                        		</li>
+		                        		<li>
+		                        			<p>Obtaining the <a target="_blank" class="about-link" href="https://dauphine.psl.eu/formations/masters/informatique/m2-informatique-decisionnelle">Master’s degree in Computer Science and Analytics from Paris-Dauphine University</a></p>
+		                        		</li>
+		                        		<li>
+		                        			<p>Finishing my one-year « part-time » at <a target="_blank" class="about-link" href="https://www.loreal.com/fr/science-et-technologie-beaute/recherche-innovation-au-service-beaute/">L’Oréal R&I.</a>
+				                            </p>
+		                        		</li>
+		                        	</ul>
 			                </div>
 			            </div>
 			            <div class="container-timeline right">
-			                <div class="content">
+			                <div class="content overflow-auto">
 			                        <h2>2018</h2>
-			                        {% if lang == 'en' %}
-			                            <ul class="marker-timeline">
-			                                <li>
-			                                    <p>Obtaining the <a target="_blank" class="about-link" href="https://sciences.sorbonne-universite.fr/formation-sciences/licences/licences-generales-l2-l3/licence-dinformatique">License’s degree in Computer Science at UPMC</a> (Paris-VI renamed Sorbonne University).</p>
-			                                </li>
-			                            </ul>
-			                        {% else %}
-			                            <ul class="marker-timeline">
-			                                <li>
-			                                    <p>Obtaining the <a target="_blank" class="about-link" href="https://sciences.sorbonne-universite.fr/formation-sciences/licences/licences-generales-l2-l3/licence-dinformatique">License’s degree in Computer Science at UPMC</a> (Paris-VI renamed Sorbonne University).</p>
-			                                </li>
-			                            </ul>
-			                        {% endif %}
+		                            <ul class="marker-timeline">
+		                                <li>
+		                                    <p>Obtaining the <a target="_blank" class="about-link" href="https://sciences.sorbonne-universite.fr/formation-sciences/licences/licences-generales-l2-l3/licence-dinformatique">License’s degree in Computer Science at UPMC</a> (Paris-VI renamed Sorbonne University).</p>
+		                                </li>
+		                            </ul>
+		                        
+		                            <ul class="marker-timeline">
+		                                <li>
+		                                    <p>Obtaining the <a target="_blank" class="about-link" href="https://sciences.sorbonne-universite.fr/formation-sciences/licences/licences-generales-l2-l3/licence-dinformatique">License’s degree in Computer Science at UPMC</a> (Paris-VI renamed Sorbonne University).</p>
+		                                </li>
+		                            </ul>
 			                </div>
 			            </div>
 			            <div class="container-timeline left">
-			                <div class="content">
+			                <div class="content overflow-auto">
 			                        <h2>2015</h2>
-			                        {% if lang == 'en' %}
-			                            <ul class="marker-timeline">
-			                                <li>
-			                                    <p>High school diploma in Sciences with Maths option at Lycée Gérard de Nerval (Val d’Oise).</p>
-			                                </li>
-			                            </ul>
-			                        {% else %}
-			                            <ul class="marker-timeline">
-			                                <li>
-			                                    <p>High school diploma in Sciences with Maths option at Lycée Gérard de Nerval (Val d’Oise).</p>
-			                                </li>
-			                            </ul>
-			                        {% endif %}
+		                            <ul class="marker-timeline">
+		                                <li>
+		                                    <p>High school diploma in Sciences with Maths option at Lycée Gérard de Nerval (Val d’Oise).</p>
+		                                </li>
+		                            </ul>
+		                            <ul class="marker-timeline">
+		                                <li>
+		                                    <p>High school diploma in Sciences with Maths option at Lycée Gérard de Nerval (Val d’Oise).</p>
+		                                </li>
+		                            </ul>
 			                </div>
 			            </div>
 			        </div>
 			    </div>
 
 			    <div class="tab-pane fade" id="v-pills-career" role="tabpanel" aria-labelledby="v-pills-career-tab">
-			    	<div class="d-flex flex-row py-4">
+			    	<div class="d-flex flex-row py-2">
 				  		<div class="col-2 mx-4"><img src="/static/img/1200px-L'Oréal_logo.png" class="img-fluid" alt="L'Oréal"></div>
-				  		<h5 class="col-3 mx-2">1-year part-time - BI Developer </h5>
-				  		<div class="col">
-				  			<div>[Value Added] Utilizing Data Viz tools (MS Power BI) to create dashboards for the Métier that contributed to the fact that the company plan on simplify and democratize the way people work with data and use Artificial Intelligence.</div>
-					  		<div>[Culture fit] I had maximum proximity to the Métier which helped to the coordination of stakeholders for better collaboration, even more since the company is in an agile development process. I also have experienced helping users to analytics platform and to master its use. All this enhanced my Communication, Data Viz and Data Wrangling skills.
-					  		</div>
-							<div>[Conclusion] This showcases my willingness to build values for my employers (by translating insights into business recommendations) and share my knowledge.</div>
+				  		<h5 class="col-md-3 mx-2">1-year part-time - BI Developer </h5>
+				  		<div class="col-md">
+				  			<p><span>Value Added</span> Utilizing Data Viz tools (MS Power BI) to create dashboards for the Métier that contributed to the fact that the company plan on simplify and democratize the way people work with data and use Artificial Intelligence.</p>
+					  		<p><span>Culture fit</span> I had maximum proximity to the Métier which helped to the coordination of stakeholders for better collaboration, even more since the company is in an agile development process. I also have experienced helping users to analytics platform and to master its use. All this enhanced my Communication, Data Viz and Data Wrangling skills.
+					  		</p>
+							<p><span>Conclusion</span> This showcases my willingness to build values for my employers (by translating insights into business recommendations) and share my knowledge.</p>
 				  		</div>
 				  	</div>
 				  	<div class="d-flex flex-row py-4">
-				  		<div class="col-2 mx-4"><img src="/static/img/1200px-Chanel_logo_complet.png" class="img-fluid" alt="Chanel" style=""></div>
-				  		<h5 class="col-3 mx-2">4-months internship - Project and Resources Manager </h5>
-				  		<div class="col">
-					  		<div>[Value Added] I helped coordinate the stakeholder of the project and created reporting (objectives, deliverables, schedule) that fostered the smooth running of the project.</div>
-					  		<div>[Culture fit] Using project management functions helped to have increased attention to customer needs.
-					  		</div>
-							<div>[Conclusion] This very first experience in the IT department gave me initial insight into the business world and leading a project.</div>
+				  		<div class="col-2 mx-4"><img src="/static/img/1200px-Chanel_logo_complet.png" class="img-fluid" alt="Chanel"></div>
+				  		<h5 class="col-md-3 mx-2">4-months internship - Project and Resources Manager </h5>
+				  		<div class="col-md">
+					  		<p><span>Value Added</span> I helped coordinate the stakeholder of the project and created reporting (objectives, deliverables, schedule) that fostered the smooth running of the project.</p>
+					  		<p><span>Culture fit</span> Using project management functions helped to have increased attention to customer needs.
+					  		</p>
+							<p><span>Conclusion</span> This very first experience in the IT department gave me initial insight into the business world and leading a project.</p>
 						</div>
 				  	</div>
 			    </div>
@@ -231,11 +213,11 @@
 					  	</div>
 						<div class="pill">
 							<h6>Data Wrangling, ML & Stats</h6>
-						  	<span class="badge bg-dark rounded-pill">Scikit-Learn</span>
+						  	<span class="badge bg-dark rounded-pill">scikit-Learn</span>
 						  	<span class="badge bg-dark rounded-pill">TensorFlow</span>
-						  	<span class="badge bg-dark rounded-pill">Pandas</span>
+						  	<span class="badge bg-dark rounded-pill">pandas</span>
 						  	<span class="badge bg-dark rounded-pill">NumPy</span>
-						  	<span class="badge bg-dark rounded-pill">Matplotlib</span>
+						  	<span class="badge bg-dark rounded-pill">matplotlib</span>
 							
 						</div>
 						<div class="pill">	
@@ -297,7 +279,6 @@
 						  	<span class="badge bg-dark rounded-pill">Sewing</span>
 						  	<span class="badge bg-dark rounded-pill">Fashion/Design</span>
 						  	<span class="badge bg-dark rounded-pill">Video Games</span>
-							
 					  	</div>
 					</div>
 			    </div>
@@ -305,34 +286,5 @@
 			</div>
 		</div>
 	</div>
-
-
-
-
-
-
-
-	<!--RAPPEL DE L'ONGLET<h1>About</h1>-->
-			
-		<!-- Intro / Who/What...-->
-        <!--
-        <div class="row about-content">
-            <img src="/static/img/pastille_houzet.png" class="img-top" alt="...">
-
-    		<div class="jumbotron p-4 p-md-5">
-    		  <div class="container">
-    		    <h1 class="display-6">Data Scientist</h1>
-    		    <hr class="my-4">
-    		        <p class="lead">
-                        I have graduated with a Masters degree in <strong>Data Science</strong> in September 2020. It brought me hands-on experience coding in multiple languages and applying some big data technologies to business uses cases. On top of it all, I ended up finding a new career that I absolutely love. 
-                        <br/>From now on, I am eager to apply relevant AI and ML techniques to build intelligent user experiences.
-                        Going forward, this place is about to communicate on my Data Science Portfolio.
-                        This Data Science is about to communicate what I have acquired, and also what I am about to learn.
-
-                    </p>
-    		  </div>
-    		</div>
-        </div>
-        -->
 
 {% endblock %}

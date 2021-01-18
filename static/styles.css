@@ -2,7 +2,7 @@ body
 {
   background-color: var(--white); /* fonctionne? */
   font-family: 'Oxygen', sans-serif;
-
+  color: rgba(8, 8, 8, 1);
 }
 
 main
@@ -78,18 +78,16 @@ header
 
 }
 
-.home-content .jumbotron
+.intro dt
 {
-    background-color: var(--white);
-    color: rgba(8, 8, 8, 1);
+  text-decoration: underline;
 }
- 
+
+
 
 /* ------------------ */
 /* about.html */
 /* ------------------ */
-
-
 
 /* -- Intro -- */
 
@@ -104,6 +102,12 @@ header
 {
   background-color: var(--white);
   color: rgba(8, 8, 8, 1);
+}
+
+#v-pills-career span
+{
+  text-decoration: underline;
+  font-weight: bold;
 }
 
 #v-pills-skills .pill, #v-pills-passions .pill
@@ -121,8 +125,6 @@ header
 {
   margin-right: 120px;
 }
-
-
 
 /* -- Learning Path -- */
 
@@ -281,11 +283,6 @@ header
 
 /* The overlay effect (full height and width) - lays on top of the container and over the image */
 .overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
   height: 100%;
   width: 100%;
   opacity: 0;
@@ -294,13 +291,12 @@ header
 }
 
 /* When you mouse over the container, fade in the overlay icon*/
-.card:hover .overlay {
+#portfolio-content .card:hover .overlay {
   opacity: 0.8;
 }
 
 /* The icon inside the overlay is positioned in the middle vertically and horizontally */
-.icon {
-  color: white;
+.icon[title="Git"] {
   font-size: 100px;
   position: absolute;
   top: 30%;
@@ -310,9 +306,22 @@ header
   text-align: center;
 }
 
-/* When you move the mouse over the icon, change color */
-.bi:hover {
-  color: ;
+.icon[title="Medium"] {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.card-img-overlay svg:hover {
+  fill: #dee2e6a3;
+}
+
+.spinner-grow
+{
+  animation: 1.50s linear infinite spinner-grow;
 }
 
 
