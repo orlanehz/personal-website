@@ -1,6 +1,44 @@
 body
 {
-  background-color: var(--white);
+  background-color: var(--white); /* fonctionne? */
+  font-family: 'Oxygen', sans-serif;
+
+}
+
+main
+{
+  font-family: 'Ubuntu', sans-serif;
+}
+
+/* ------------------ */
+/* layout.html - navbar */
+/* ------------------ */
+
+.navbar
+{
+    min-height:50px;
+    background-color: white;
+}
+
+.navbar-brand, .navbar-brand:hover, .nav-link, .nav-link:hover
+{
+    color: rgba(8, 8, 8, 1);
+}
+
+.nav-link:hover
+{
+  text-decoration: underline;
+}
+
+.nav-link.active
+{
+  text-decoration: underline;
+}
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: 0 0 0 0;
 }
 
 header
@@ -14,44 +52,7 @@ header
   color: rgba(8, 8, 8, 1);
 }
 
-/* Layout - navbar */
-.navbar-brand, .navbar-brand:hover
-{
-    color: rgba(8, 8, 8, 1);
-}
-
-.navbar
-{
-    min-height:50px;
-    background-color: var(--white);
-}
-
-.navbar-toggler-icon
-{
-  color: red;
-}
-
-#index-navbarbrand
-{
-    
-}
-
-.nav-link
-{
-  color: #343a40;
-}
-
-.nav-link:hover
-{
-  color: #343a40;
-  text-decoration: underline;
-}
-
-.nav-link.active
-{
-  text-decoration: underline;
-}
-
+/* FR button
 #index-btn-lang
 {
     color:#212529;
@@ -65,15 +66,65 @@ header
     color:#e9ecef;
     background-color:#0062cc;
     border-radius:20px;
+}*/
+
+/* ------------------ */
+/* index.html */
+/* ------------------ */
+
+/* personalization of my name in index page */
+#index-navbarbrand
+{
+
 }
 
-.jumbotron
+.home-content .jumbotron
 {
     background-color: var(--white);
     color: rgba(8, 8, 8, 1);
 }
+ 
+
+/* ------------------ */
+/* about.html */
+/* ------------------ */
 
 
+
+/* -- Intro -- */
+
+.nav-pills .nav-link.active
+{
+  background-color: var(--white);
+  color: rgba(8, 8, 8, 1);
+  border-radius:10px;
+}
+
+.accordion-button:not(.collapsed) 
+{
+  background-color: var(--white);
+  color: rgba(8, 8, 8, 1);
+}
+
+#v-pills-skills .pill, #v-pills-passions .pill
+{
+  padding-bottom: 30px;
+}
+
+#v-pills-skills h6, #v-pills-passions h6
+{
+  /*font-family: Arial;*/
+  text-decoration: underline;
+}
+
+#v-pills-skills, #v-pills-passions
+{
+  margin-right: 120px;
+}
+
+
+
+/* -- Learning Path -- */
 
 /* The actual timeline (the vertical ruler) */
 .timeline {
@@ -219,9 +270,11 @@ header
 
 
 
-/* Portoflio */
+/* ------------------ */
+/* portfolio.html */
+/* ------------------ */
 
-.card
+.portfolio-content .card
 {
   max-width: 50%;
 }
@@ -263,32 +316,9 @@ header
 }
 
 
+/* ------------------ */
+/* blog.html */
+/* ------------------ */
 
 
-/* About me. Intro */
-.about-content
-{
-  margin-top:0px;
-}
-
-.nav-pills .nav-link
-{
-  margin: 5px;
-}
-
-.nav-pills .nav-link.active
-{
-  background-color: blue;
-  border-radius:10px;
-}
-
-.btn-link, .btn-link:hover
-{
-    color: #495057;
-}
-
-.pill-career
-{
-  margin:20px;
-}
 

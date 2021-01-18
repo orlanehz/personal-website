@@ -5,46 +5,33 @@
 {% endblock %}
 
 {% block main %}
-	<div class="home-content py-1 px-5">
+
+	<div class="home-content px-5">
+
 		<!-- Intro -->
 		
-		<div class="row mb-5">
-            <img src="/static/img/pastille_houzet.png" class="col w-25 p-3 img-fluid" alt="Picture of me">
-    		<div class="col jumbotron p-4 p-md-5">
-    		  <div class="container">
-    		    <h1 class="display-4">DATA SCIENCE & CREATIVE INNOVATION</h1>
-    		    <hr class="my-4">
-    		    <p class="lead">
-    		    	I am a Data Scientist and I am eager to become a professional of the creative technology.
-    			</p>
-    		  </div>
-    		</div>
-        </div>
-
 
 		<!-- My Latest Project -->
-	    <div class="row mb-5">
-	        <div class="row justify-content-center">
-	            <div class="row">
-	                <h3>My Latest Projects</h3>
-	            </div>
-	            <div class="row mt-4">
-	            	<a href="/portfolio" class="" title="Project">
-		            	<div class="media">
-						  <img src="/static/img/website.jpeg" class="w-25 p-3 mr-3 img-thumbnail" alt="website">
-						  <div class="media-body">
-						    <h5 class="mt-0">My Website from Scratch</h5>
-	          				<p class="card-text">Utilizing HTML, CSS, JavaScript, Jinja, a templating language, Flask, a micro web framework, and others technologies to develop a unique data science portfolio website.</p>
-	          				<p class="card-text"><small class="text-muted">Last updated 29-Dec-20</small></p>
-						  </div>
-						</div>
-					</a>
-				</div>	
-	        </div>
-	    </div>
+        <div class="container">
+        	<h3>My Latest Project</h3>
+            
+
+            <div class="card mb-3">
+			  <div class="row g-0">
+			    <div class="col-md-4">
+			      <img src="/static/img/website.jpeg" class="" style="max-width: 300px;" alt="website">
+			    </div>
+			    <div class="col-md-8">
+			      <div class="card-body">
+			        <h5 class="card-title">My Website from Scratch</h5>
+			        <p class="card-text">Utilizing HTML, CSS, JavaScript, Jinja, a templating language, Flask, a micro web framework, and others technologies to develop a unique data science portfolio website.</p>
+			        <p class="card-text"><small class="text-muted">Last updated 29-Dec-20</small></p>
+			      </div>
+			    </div>
+			  </div>
+			</div>	
+        </div>
 	</div>
 	
-
-
 
 {% endblock %}
