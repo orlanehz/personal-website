@@ -174,26 +174,21 @@
 			    </div>
 
 			    <div class="tab-pane fade" id="v-pills-career" role="tabpanel" aria-labelledby="v-pills-career-tab">
+			    	{% for job in career %}
 			    	<div class="d-flex flex-row py-2">
-				  		<div class="col-2 mx-4"><img src="/static/img/1200px-L'Oréal_logo.png" class="img-fluid" alt="L'Oréal"></div>
-				  		<h5 class="col-md-3 mx-2">1-year part-time - BI Developer </h5>
+				  		<div class="col-2 mx-4">
+				  			<a target="_blank" href="{{ job[0][5] }}">
+				  				<img src="{{ job[0][1] }}" class="img-fluid" alt="{{ job[0][6] }}">
+				  			</a>
+				  		</div>
+				  		<h5 class="col-md-3 mx-2">{{ job[0][0] }}</h5>
 				  		<div class="col-md">
-				  			<p><span>Value Added</span> Utilizing Data Viz tools (MS Power BI) to create dashboards for the Métier that contributed to the fact that the company plan on simplify and democratize the way people work with data and use Artificial Intelligence.</p>
-					  		<p><span>Culture fit</span> I had maximum proximity to the Métier which helped to the coordination of stakeholders for better collaboration, even more since the company is in an agile development process. I also have experienced helping users to analytics platform and to master its use. All this enhanced my Communication, Data Viz and Data Wrangling skills.
-					  		</p>
-							<p><span>Conclusion</span> This showcases my willingness to build values for my employers (by translating insights into business recommendations) and share my knowledge.</p>
+				  			<p><span>Value Added</span> {{ job[0][2] }}</p>
+					  		<p><span>Culture fit</span> {{ job[0][3] }}</p>
+							<p><span>Conclusion</span> {{ job[0][4] }}</p>
 				  		</div>
 				  	</div>
-				  	<div class="d-flex flex-row py-4">
-				  		<div class="col-2 mx-4"><img src="/static/img/1200px-Chanel_logo_complet.png" class="img-fluid" alt="Chanel"></div>
-				  		<h5 class="col-md-3 mx-2">4-months internship - Project and Resources Manager </h5>
-				  		<div class="col-md">
-					  		<p><span>Value Added</span> I helped coordinate the stakeholder of the project and created reporting (objectives, deliverables, schedule) that fostered the smooth running of the project.</p>
-					  		<p><span>Culture fit</span> Using project management functions helped to have increased attention to customer needs.
-					  		</p>
-							<p><span>Conclusion</span> This very first experience in the IT department gave me initial insight into the business world and leading a project.</p>
-						</div>
-				  	</div>
+				  	{% endfor %}
 			    </div>
 
 			    <div class="tab-pane fade" id="v-pills-skills" role="tabpanel" aria-labelledby="v-pills-skills-tab">

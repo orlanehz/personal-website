@@ -20,7 +20,11 @@ def index():
 
 @app.route('/about', methods=['POST', 'GET'])
 def about():
-    return render_template('about.html')
+    # get all jobs from the database
+    zipped = helper.get_career_content()
+
+    return render_template('about.html',
+                            career=zipped)
 
 
 @app.route('/portfolio', methods=['POST', 'GET'])
