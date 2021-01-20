@@ -26,10 +26,10 @@ def about():
 @app.route('/portfolio', methods=['POST', 'GET'])
 def portfolio():
     # get all projects from the database
-    #zipped = helper.get_portfolio_content()
+    zipped = helper.get_portfolio_content()
 
-    return render_template('portfolio.html')
-                            #projects=zipped)
+    return render_template('portfolio.html',
+                            projects=zipped)
 
 
 @app.route('/blog', methods=['POST', 'GET'])
