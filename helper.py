@@ -52,7 +52,7 @@ def get_portfolio_content():
     iterator = iter(project_list)
     zipped = zip(iterator, iterator)
 
-    return zipped, latest_count
+    return zipped
 
 
 def get_career_content():
