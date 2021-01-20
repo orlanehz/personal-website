@@ -48,22 +48,26 @@
 		<!-- My Latest Project -->
 		<div class="container-fluid pt-3">
 	    	<h4 class="alert-heading">My Latest Project</h4>
+	    	{% for proj in projects %}
+	    	{% if proj[0][9] == 'yes' %}
 	        <div class="card mb-3">
-			  <div class="row g-2">
-			    <div class="col-lg-4 align-self-center">
-			      <img src="/static/img/website.jpeg" class="img-fluid" alt="website">
-			    </div>
-			    <div class="col-lg-8">
-			      <div class="card-body">
-			        <h5 class="card-title">My Website from Scratch</h5>
-			        <p class="card-text">Utilizing HTML, CSS, JavaScript, Jinja (a templating language), Flask (a micro web framework) and others technologies to develop a unique data science portfolio website.</p>
-			        
-			        <p class="card-text"><small class="text-muted">Last updated 18-Jan-21</small></p>
-			        <a href="/portfolio" class="btn btn-success">See in Portfolio</a>
-			      </div>
-			    </div>
-			  </div>
+	        	<div class="row g-2">
+	        		<div class="col-lg-4 align-self-center">
+				      <img src="{{ proj[0][3] }}" class="img-fluid" alt="{{ proj[0][8] }}">
+				    </div>
+				    <div class="col-lg-8">
+				      <div class="card-body">
+				        <h5 class="card-title">{{ proj[0][0] }}</h5>
+				        <p class="card-text">{{ proj[0][1] }}</p>
+				        
+				        <p class="card-text"><small class="text-muted">Last updated {{ proj[0][6] }}</small></p>
+				        <a href="/portfolio" class="btn btn-success">See in Portfolio</a>
+				      </div>
+				    </div>
+				</div>
 			</div>
+			{% endif %}
+			{% endfor %}
 		</div>
 	</div>
 	

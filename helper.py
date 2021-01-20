@@ -20,6 +20,9 @@ def get_portfolio_content():
     conn.close()
 
 
+    latest_count = 0
+
+
     # instantiate a list to save all projects in
     project_list = []
     # iterate through all the projects in the database
@@ -37,6 +40,9 @@ def get_portfolio_content():
 
         # assign single project to entire project_list
         project_list.append(one_project)
+        
+        #if project[8] == 'yes':
+         #   latest_count += 1
 
     # create list of lists that contains pairs of projects
     #if len(project_list) % 2 == 0:
@@ -46,7 +52,7 @@ def get_portfolio_content():
     iterator = iter(project_list)
     zipped = zip(iterator, iterator)
 
-    return zipped
+    return zipped, latest_count
 
 
 def get_career_content():

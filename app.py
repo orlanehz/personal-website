@@ -15,8 +15,13 @@ app = Flask(__name__)
 @app.route('/index', methods=['POST', 'GET'])
 @app.route('/', methods=['POST', 'GET'])
 def index():
+    # get all projects from the database
+    zipped, lis = helper.get_portfolio_content()
+
     return render_template('/index.html',
-                            id='index')
+                            id='index',
+                            projects=zipped,
+                            listp=lis)
 
 @app.route('/about', methods=['POST', 'GET'])
 def about():
