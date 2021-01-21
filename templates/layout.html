@@ -14,8 +14,9 @@
     <link href="/static/styles.css" rel="stylesheet">
 
     <title>{% block title %}{% endblock %}</title>
-    <link rel="icon" href="/static/img/pastille_houzet.png">
 
+
+    <link rel="icon" href="https://img.icons8.com/ios/50/000000/rocket--v2.png">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Oxygen&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
@@ -43,19 +44,24 @@
             {% set active_page = active_page|default('index') -%}
             {% for href, id, caption in navbar_menus %}
                 {% if id == "about" %}
-                  <li class="nav-item dropdown">
-                    <div class="dropdown">
-                      <button class="nav-link btn dropdown-toggle {% if id == active_page %} active {% endif%}" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: inherit;">
+                  <li class="nav-item">
+                    <div class="btn-group">
+                      <a class="nav-link {% if id == active_page %} active {% endif%} " href="/about" role="button">
                         {{ caption }}
+                      </a>
+                      
+                      <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="visually-hidden">Toggle Dropdown</span>
                       </button>
-
-                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <li><a class="dropdown-item" href="/about">About <span class="badge bg-secondary">READ ME!</span></a></li>
+                      <ul class="dropdown-menu">
+                        
                         <li><a class="dropdown-item" href="/static/docs/resume.pdf">Resume <span class="badge bg-secondary">PDF</span></a></li>
                         <!-- Here create one if else to have the FR version of the CV
                         <li><a class="dropdown-item" href="/static/docs/resume.pdf">Resume <span class="badge bg-primary">FR</span> <span class="badge bg-secondary">PDF</span></a></li>-->
                       </ul>
                     </div>
+
+
                   </li>
                 {% else%}
                   <li class="nav-item">
@@ -81,6 +87,7 @@
                 <li class="nav-item">
                     <a target="_blank" class="nav-link" id="index-nav-link" href="https://www.linkedin.com/in/orlane-houzet/">LinkedIn</a>
                 </li>
+                <li class="nav-item pt-1">🚀</li>
                 <!--<li class="nav-item">
                     <form method="post">
                         <button type="submit" name="lang" class="btn" id="index-btn-lang" value="fr">FR</button>
@@ -93,19 +100,12 @@
 
 
       <main>
-        <!-- Header -->
-        <!--{% for href, id, caption in navbar_menus %}
-          {% if id != "index" and id == active_page %}
-            <header> {{ caption }} </header>
-          {% endif%}
-        {% endfor %}-->
-
-        <!-- Main Block -->
         {% block main %}{% endblock %}
       </main>
 
-      <footer class="small text-center text-muted mt-3">
-        <p class="copyright">Copyright &copy; 2020 | Orlane Houzet</p>
+      <footer class="small text-center text-muted m-3">
+        <p class="copyright">Copyright &copy; 2021 | Orlane Houzet</p>
+        <a href="https://icons8.com/icon/pvRqtncLYdo4/fusée">Fusée icon by Icons8</a>
       </footer>
 
       <!-- Optional JavaScript -->

@@ -5,21 +5,19 @@
 {% endblock %}
 
 {% block main %}
+	
+	<!-- Hook -->
+	<div class="hook text-center py-4 mb-2">
+		<hr style="">
+		<h1 class="display-3 py-2 text-uppercase" style="margin-bottom: 0px !important;">Orlane Houzet</h1>
+		<p class="lead">Data Science, Design & Creative Innovation</p>
+		<hr>
+	</div>
 
 	<div class="home-content p-3 px-5">
-
-		<!-- Intro -->
 		<div class="container-fluid">
-			<!-- Hook -->
-			<div class="hook text-center">
-				<hr style="">
-				<h1 class="alert-heading display-3 py-2">Orlane Houzet</h1>
-				<p class="lead">Data Science, Design & Creative Innovation</p>
-				<hr>
-			</div>
-
 			<!-- Desc -->
-			<div class="row g-4 pb-5">
+			<div class="row g-4 pb-2">
 				<!-- Photo -->
 				<!--
 			    <div class="photo col-sm-2">
@@ -31,10 +29,10 @@
 			      	<dl class="row">
 			      		<dt class="col-lg-2">Me in 15 seconds</dt>
 			      		<dd class="col-sm-10">
-						    <p class="lh-sm">I from <strong>France</strong>, around <strong>Paris</strong>.</p>
-						    <p class="lh-sm">I completed my studies in <strong>Data Science</strong> in October 2020 <strong>(Master’s Degree, Paris-Dauphine University)</strong>.</p>
-						    <p class="lh-sm">The use of <strong>new technologies</strong> has always fascinated me. I am also passioned by <strong>fashion and design, creation and quality</strong>. For 2 years, my new pastime is sewing.</p>
-						    <p class="lh-sm">I am interested in working in innovative industries like Social and <strong>News Media, Information Technology, Entertainment, Textiles and Manufacturing</strong>.</p>
+						    <p class="lh-base">I from <strong>France</strong>, around <strong>Paris</strong>.</p>
+						    <p class="lh-base">I completed my studies in <strong>Data Science</strong> in October 2020 <strong>(Master’s Degree, Paris-Dauphine University)</strong>.</p>
+						    <p class="lh-base">The use of <strong>new technologies</strong> has always fascinated me. I am also passioned by <strong>fashion and design, creation and quality</strong>. For 2 years, my new pastime is sewing.</p>
+						    <p class="lh-base">I am interested in working in innovative industries like <strong>Social and News Media, Information Technology, Entertainment, Textiles and Manufacturing</strong>.</p>
 					  	</dd>
 
 					  	<dt class="col-lg-2">Social Networks</dt>
@@ -46,16 +44,16 @@
 		</div>
 		
 		<!-- My Latest Project -->
-		<div class="container-fluid pt-3">
-	    	<h4 class="alert-heading">My Latest Project</h4>
+		<div class="container-fluid py-4">
+	    	<h4 class="alert-heading px-1">My Latest Project</h4>
 	    	{% for proj in projects %}
 	    	{% if proj[0][9] == 'yes' %}
-	        <div class="card mb-3">
-	        	<div class="row gx-2">
-	        		<div class="col-lg-5 align-self-center">
+	        <div class="card">
+	        	<div class="row g-0">
+	        		<div class="col" style="max-width: 400px;">
 				      <img src="{{ proj[0][3] }}" class="img-fluid" alt="{{ proj[0][8] }}">
 				    </div>
-				    <div class="col-lg">
+				    <div class="col-xl overflow-scroll">
 				      <div class="card-body">
 				        <h5 class="card-title fw-bolder">{{ proj[0][0] }}</h5>
 				        <p class="card-text">{{ proj[0][1] }}</p>

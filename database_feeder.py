@@ -17,7 +17,7 @@ cur = conn.cursor()
 
 cur.execute("DROP TABLE portfolio")
 cur.execute("CREATE TABLE IF NOT EXISTS portfolio \
-            (id SERIAL, title text NOT NULL, description text, skills text, \
+            (id SERIAL, title text, description text, skills text, \
              image text, code text, blog_post text, maj_date text, tag text, alt text, latest text)")
 
 # select everything from the portfolio database
