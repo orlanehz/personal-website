@@ -1,6 +1,6 @@
 body
 {
-  background-color: var(--white); /* fonctionne? */
+  background-color: var(--white);
   font-family: 'Oxygen', sans-serif;
   color: rgba(8, 8, 8, 1);
   font-size: larger;
@@ -9,7 +9,7 @@ body
 main
 {
   font-family: 'Ubuntu', sans-serif;
-  min-height: 760px;
+  min-height: 100%;
   font-size: medium;
 }
 
@@ -101,7 +101,6 @@ header
 }
 
 
-
 /* ------------------ */
 /* about.html */
 /* ------------------ */
@@ -153,7 +152,6 @@ header
   /*font-family: Arial;*/
   text-decoration: underline;
 }
-
 
 
 /* -- Learning Path -- */
@@ -353,6 +351,11 @@ header
 /* ------------------ */
 /* blog.html */
 /* ------------------ */
+
+/* ------------------ */
+/* contact.html */
+/* ------------------ */
+
 
 
 
