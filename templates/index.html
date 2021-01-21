@@ -11,22 +11,22 @@
 		<!-- Intro -->
 		<div class="container-fluid">
 			<!-- Hook -->
-			<div class="text-center">
-				<hr>
-				<h1 class="alert-heading display-3">Orlane Houzet</h1>
+			<div class="hook text-center">
+				<hr style="">
+				<h1 class="alert-heading display-3 py-2">Orlane Houzet</h1>
 				<p class="lead">Data Science, Design & Creative Innovation</p>
 				<hr>
 			</div>
 
 			<!-- Desc -->
-			<div class="row g-4 py-5">
+			<div class="row g-4 pb-5">
 				<!-- Photo -->
 				<!--
 			    <div class="photo col-sm-2">
 			      <img src="/static/img/Houzet_Orlane pastille.jpg" class="card" style="width: 193px; border-radius: 100%;">
 			    </div>
 				-->
-
+				<p class="text-center">This place is about to communicate on my Data Science Portfolio.</p>
 			    <div class="intro col-sm">
 			      	<dl class="row">
 			      		<dt class="col-lg-2">Me in 15 seconds</dt>
@@ -51,13 +51,13 @@
 	    	{% for proj in projects %}
 	    	{% if proj[0][9] == 'yes' %}
 	        <div class="card mb-3">
-	        	<div class="row g-2">
-	        		<div class="col-lg-4 align-self-center">
+	        	<div class="row gx-2">
+	        		<div class="col-lg-5 align-self-center">
 				      <img src="{{ proj[0][3] }}" class="img-fluid" alt="{{ proj[0][8] }}">
 				    </div>
-				    <div class="col-lg-8">
+				    <div class="col-lg">
 				      <div class="card-body">
-				        <h5 class="card-title">{{ proj[0][0] }}</h5>
+				        <h5 class="card-title fw-bolder">{{ proj[0][0] }}</h5>
 				        <p class="card-text">{{ proj[0][1] }}</p>
 				        
 				        <p class="card-text"><small class="text-muted">Last updated {{ proj[0][6] }}</small></p>

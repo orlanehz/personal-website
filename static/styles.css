@@ -3,6 +3,7 @@ body
   background-color: var(--white); /* fonctionne? */
   font-family: 'Oxygen', sans-serif;
   color: rgba(8, 8, 8, 1);
+  font-size: larger;
 }
 
 main
@@ -83,6 +84,19 @@ header
   text-decoration: underline;
 }
 
+.hook h1
+{
+  background-color: rgb(188, 189, 227);
+  color: rgba(255, 255, 255, 0.6);
+  font-family: Bodoni Ornaments;
+}
+
+.hook .lead
+{
+  background-color: rgb(188, 189, 227);
+  color: rgba(255, 255, 255, 0.6);
+}
+
 
 
 /* ------------------ */
@@ -104,11 +118,11 @@ header
   color: rgba(8, 8, 8, 1);
 }
 
-#v-pills-career span
+.accordion-button
 {
-  text-decoration: underline;
-  font-weight: bold;
+  display: inline;
 }
+
 
 #v-pills-skills .pill, #v-pills-passions .pill
 {
@@ -121,10 +135,7 @@ header
   text-decoration: underline;
 }
 
-#v-pills-skills, #v-pills-passions
-{
-  margin-right: 120px;
-}
+
 
 /* -- Learning Path -- */
 
