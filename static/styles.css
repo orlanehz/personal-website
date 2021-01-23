@@ -92,6 +92,11 @@ header
   color: rgba(255, 255, 255, 0.6);
   font-family: Copperplate;
   background-image: url("/static/img/fusée.jpeg");
+  background-position: 1% 22%;
+  background-size: 1280px;
+  background-repeat: repeat;
+  padding-bottom: 60px !important; 
+  padding-top: 60px !important;
 }
 
 .hook .lead
