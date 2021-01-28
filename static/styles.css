@@ -93,8 +93,8 @@ header
   color: rgba(255, 255, 255, 1);
   font-family: Copperplate;
   background-image: url("/static/img/datasciencedot.jpg");
-  background-position: 0% 60%;
-  background-size: 570px;
+  background-position: 0% 100%;
+  background-size: 600px;
   background-repeat: repeat;
   /* padding-bottom: 60px !important; */
   /* padding-top: 60px !important; */
