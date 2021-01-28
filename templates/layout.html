@@ -27,27 +27,30 @@
 
   </head>
   <body>
+      {% set navbar_menus = [
+        ('/', 'index', 'Home'),
+        ('/about', 'about', 'About'),
+        ('/portfolio', 'portfolio', 'Portfolio'),
+        ('/blog', 'blog', 'Blog'),
+        ('/contact', 'contact', 'Contact'),
+        ] -%}
+      {% set active_page = active_page|default('index') -%}
+
       <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container-fluid">
-          <a class="navbar-brand" id="{{ id }}-navbarbrand" href="/index">ORLANE HOUZET</a>
+
+          <a class="navbar-brand {% if active_page == 'index' %} visually-hidden {% endif%}" id="{{ id }}-navbarbrand" href="/index" style="margin-right: 0.25em; font-size: larger;">ORLANE HOUZET</a>
+          <img src="https://img.icons8.com/ios/50/000000/rocket--v2.png" style="height: 1.2em; padding: 0 0.25em; color: red"/>
           <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            {% set navbar_menus = [
-            ('/', 'index', 'Home'),
-            ('/about', 'about', 'About'),
-            ('/portfolio', 'portfolio', 'Portfolio'),
-            ('/blog', 'blog', 'Blog'),
-            ('/contact', 'contact', 'Contact'),
-            ] -%}
-            {% set active_page = active_page|default('index') -%}
             {% for href, id, caption in navbar_menus %}
                 {% if id == "about" %}
                   <!--<li class="nav-item">
                     <div class="btn-group">
-                      <a class="nav-link {% if id == active_page %} active {% endif%} " href="/about" role="button">
+                      <a class="nav-link {% if id == active_page %} active {% endif%}" href="/about" role="button">
                         {{ caption }}
                       </a>
                       
@@ -105,8 +108,8 @@
       </main>
 
       <footer class="small text-center text-muted m-3">
-        <p class="copyright">Copyright &copy; 2021 | Orlane Houzet</p>
-        <a class="small" href="https://icons8.com/icon/pvRqtncLYdo4/rocket">Rocket icon by Icons8</a>
+        <p class="copyright">Copyright &copy; 2021 | Orlane Houzet | <a href="https://icons8.com/icon/pvRqtncLYdo4/rocket">Rocket icon by Icons8</a></p>
+        
       </footer>
 
       <!-- Optional JavaScript -->

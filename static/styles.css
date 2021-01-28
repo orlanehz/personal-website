@@ -105,6 +105,12 @@ header
   /*color: rgba(255, 255, 255, 0.6);*/
 }
 
+.hook hr
+{
+  background-color: rgba(0, 0, 0, 1);
+  height: 0.3px;
+  opacity: 1;
+}
 
 /* ------------------ */
 /* about.html */
