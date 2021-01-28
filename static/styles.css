@@ -9,7 +9,7 @@ body
 main
 {
   font-family: 'Ubuntu', sans-serif;
-  min-height: 100%;
+  min-height: 40em; /* ou 400px */
   font-size: medium;
 }
 
@@ -88,15 +88,15 @@ header
 
 .hook
 {
-  /*background-color: rgb(188, 189, 227);*/
-  color: rgba(255, 255, 255, 0.6);
+  /* background-color: rgb(188, 189, 227); */
+  /* color: rgba(255, 255, 255, 0.6); */
   font-family: Copperplate;
-  background-image: url("/static/img/fusée.jpeg");
+  /* background-image: url("/static/img/fusée.jpeg"); */
   background-position: 1% 22%;
   background-size: 1280px;
   background-repeat: repeat;
-  padding-bottom: 60px !important; 
-  padding-top: 60px !important;
+  /* padding-bottom: 60px !important; */
+  /* padding-top: 60px !important; */
 }
 
 .hook .lead
@@ -142,9 +142,22 @@ header
   font-size: medium;
 }
 
+#v-pills-intro a
+{
+  color: rgba(8, 8, 8, 1);
+}
+
+#v-pills-intro a:hover
+{
+  color: #157347;
+  text-decoration-style: dotted;
+}
+
+
 #v-pills-skills, #v-pills-passions
 {
-  padding-right: 10%;
+  /*padding-right: 10%;*/
+  text-align: center;
 }
 
 #v-pills-skills .pill, #v-pills-passions .pill
@@ -152,12 +165,19 @@ header
   padding-bottom: 30px;
 }
 
+
 #v-pills-skills h6, #v-pills-passions h6
 {
   /*font-family: Arial;*/
+  font-size: large;
   text-decoration: underline;
+  padding-bottom: 5px;
 }
 
+#v-pills-skills .pill span, #v-pills-passions .pill span
+{
+  font-size: medium;
+}
 
 /* -- Learning Path -- */
 
@@ -296,11 +316,14 @@ header
 {
     color: rgba(8, 8, 8, 1);
     text-decoration: underline;
+    font-weight: bolder;
 }
 
 .marker-timeline a:hover
 {
-    color: blue;
+    color: #157347;
+    text-decoration-style: dotted;
+    font-weight: bolder;
 }
 
 
@@ -327,7 +350,7 @@ header
 .icon[title="Git"] {
   font-size: 100px;
   position: absolute;
-  top: 30%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -336,14 +359,14 @@ header
 
 .icon[title="Medium"] {
   position: absolute;
-  top: 60%;
+  top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
 
-.card-img-overlay svg:hover {
+.card-img-overlay svg:hover, img:hover {
   fill: #dee2e6a3;
 }
 

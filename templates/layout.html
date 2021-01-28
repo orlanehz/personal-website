@@ -15,8 +15,9 @@
 
     <title>{% block title %}{% endblock %}</title>
 
+    <!-- Icon -->
+    <link rel="icon" href="https://img.icons8.com/ios/50/000000/rocket--v1.png">
 
-    <link rel="icon" href="https://img.icons8.com/ios/50/000000/rocket--v2.png">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Oxygen&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
@@ -44,7 +45,7 @@
             {% set active_page = active_page|default('index') -%}
             {% for href, id, caption in navbar_menus %}
                 {% if id == "about" %}
-                  <li class="nav-item">
+                  <!--<li class="nav-item">
                     <div class="btn-group">
                       <a class="nav-link {% if id == active_page %} active {% endif%} " href="/about" role="button">
                         {{ caption }}
@@ -61,7 +62,7 @@
                     </div>
 
 
-                  </li>
+                  </li>-->
                 {% else%}
                   <li class="nav-item">
                       <a class="nav-link {% if id == active_page %} active {% endif%}" href="{{ href }}">
@@ -80,9 +81,9 @@
                 <li class="nav-item">
                     <a target="_blank" class="nav-link" id="index-nav-link" href="https://www.kaggle.com/orlanehouzet">Kaggle</a>
                 </li>
-                <li class="nav-item">
+                <!--<li class="nav-item">
                     <a target="_blank" class="nav-link" id="index-nav-link" href="https://medium.com/@orlane.houzet">Medium</a>
-                </li>
+                </li>-->
                 <li class="nav-item">
                     <a target="_blank" class="nav-link" id="index-nav-link" href="https://www.linkedin.com/in/orlane-houzet/">LinkedIn</a>
                 </li>
@@ -105,7 +106,7 @@
 
       <footer class="small text-center text-muted m-3">
         <p class="copyright">Copyright &copy; 2021 | Orlane Houzet</p>
-        <a class="small" href="https://icons8.com/icon/pvRqtncLYdo4/fusée">Fusée icon by Icons8</a>
+        <a class="small" href="https://icons8.com/icon/pvRqtncLYdo4/rocket">Rocket icon by Icons8</a>
       </footer>
 
       <!-- Optional JavaScript -->

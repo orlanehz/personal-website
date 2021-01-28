@@ -7,44 +7,183 @@
 {% block main %}
 	
 	<!-- Hook -->
-	<div class="hook text-center py-5 mb-2">
+	<div class="hook text-center py-2">
 		<hr style="">
 		<h1 class="display-3 text-uppercase" style="margin-bottom: 0px !important;">Orlane Houzet</h1>
 		<p class="lead">Data Science, Design & Creative Innovation</p>
 		<hr>
 	</div>
+	
+	<!--<p class="text-center">This place is about to communicate on my Data Science Portfolio.</p>-->
 
 	<div class="home-content p-3 px-5">
-		<div class="container-fluid">
-			<!-- Desc -->
-			<div class="row g-4 pb-2">
-				<!-- Photo -->
-				<!--
-			    <div class="photo col-sm-2">
-			      <img src="/static/img/Houzet_Orlane pastille.jpg" class="card" style="width: 193px; border-radius: 100%;">
-			    </div>
-				-->
-				<p class="text-center" style="margin-bottom: 5px !important;">This place is about to communicate on my Data Science Portfolio.</p>
-			    <div class="intro col-sm">
-			      	<dl class="row">
-			      		<dt class="col-lg-2">Me in 15 seconds</dt>
-			      		<dd class="col-sm-10">
-						    <p class="lh-base">I from <strong>France</strong>, around <strong>Paris</strong>.</p>
-						    <p class="lh-base">I completed my studies in <strong>Data Science</strong> in October 2020 <strong>(Master’s Degree, Paris-Dauphine University)</strong>.</p>
-						    <p class="lh-base">The use of <strong>new technologies</strong> has always fascinated me. I am also passioned by <strong>fashion and design, creation and quality</strong>. For 2 years, my new pastime is sewing.</p>
-						    <p class="lh-base">I am interested in working in innovative industries such as <strong>Social and News Media, Information Technology, Entertainment, Textiles and Manufacturing</strong>.</p>
-					  	</dd>
 
-					  	<dt class="col-lg-2">Social Networks</dt>
-					  	<dd class="col-sm-10">You can find me on platforms such as <strong><a target="_blank" href="https://github.com/orlanehz">GitHub</a>, <a target="_blank" href="https://www.kaggle.com/orlanehouzet">Kaggle</a>, <a target="_blank" href="https://medium.com/@orlane.houzet">Medium</a>, <a target="_blank" href="https://www.linkedin.com/in/orlane-houzet/">LinkedIn</a>, <a target="_blank" href="https://stackoverflow.com/users/story/14402440">StackOverflow</a> and <a target="_blank" href="https://www.instagram.com/orlanehouzet/?hl=fr">Instagram account</a></strong>.</dd>
-					</dl>
-			    </div>
-			    
-		  	</div>
+		<div class="d-flex align-items-start p-4 shadow p-3 mb-5 bg-white rounded" style="background-color: rgba(0, 0, 0, 0.0);" style="max-height: 500px;">
+		  <!-- Navs -->
+		  <div class="nav flex-column nav-pills me-3 text-nowrap" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+		    <a class="nav-link active" id="v-pills-intro-tab" data-bs-toggle="pill" href="#v-pills-intro" role="tab" aria-controls="v-pills-intro" aria-selected="true" style="padding-top: 0px;">Me in 15 seconds</a>
+		    <a class="nav-link" id="v-pills-career-tab" data-bs-toggle="pill" href="#v-pills-career" role="tab" aria-controls="v-pills-career" aria-selected="false">Career</a>
+		    <a class="nav-link" id="v-pills-learning-tab" data-bs-toggle="pill" href="#v-pills-learning" role="tab" aria-controls="v-pills-learning" aria-selected="false">Learning Path</a>
+		    <a class="nav-link" id="v-pills-skills-tab" data-bs-toggle="pill" href="#v-pills-skills" role="tab" aria-controls="v-pills-skills" aria-selected="false">Skills</a>
+		    <a class="nav-link" id="v-pills-passions-tab" data-bs-toggle="pill" href="#v-pills-passions" role="tab" aria-controls="v-pills-passions" aria-selected="false">Passions</a>
+		    <!--<a class="nav-link" id="v-pills-resume-tab" data-bs-toggle="pill" href="#v-pills-resume" role="tab" aria-controls="v-pills-resume" aria-selected="false">Resume</a>-->
+		  </div>
+
+		  <!-- Content -->
+		  <div class="container-fluid tab-content" id="v-pills-tabContent">
+		    <div class="tab-pane fade show active lh-lg" id="v-pills-intro" role="tabpanel" aria-labelledby="v-pills-intro-tab">
+			    <p>I'm from <strong>France</strong>, around <strong>Paris</strong>.</p>
+			    <p>I completed my studies in <strong>Data Science</strong> in October 2020 <strong>(Master’s Degree, Paris-Dauphine University)</strong>.</p>
+			    <p>The use of <strong>new technologies</strong> has always fascinated me. I am also passioned by <strong>fashion and design, creation and quality</strong>. For 2 years, my new pastime is sewing.</p>
+			    <p>I am interested in working in innovative industries such as <strong>Social and News Media, Information Technology, Entertainment, Textiles and Manufacturing</strong>.</p>
+			    <a target="_blank" href="https://drive.google.com/file/d/1iPR9--kPTu7ThEV7mU0xNDzVnuE8Jj_X/view?usp=sharing">Resume - EN</a>
+			    /
+			    <a target="_blank" href="https://drive.google.com/file/d/1bqbazhrtvhtvOwER7oKtl9BtwiOYT6ZW/view?usp=sharing">Resume - FR</a>
+		    </div>
+
+		    <div class="tab-pane fade" id="v-pills-career" role="tabpanel" aria-labelledby="v-pills-career-tab">
+		    	<div class="container-fluid">
+		    		{% for job in career %}
+			    	<div class="row p-2 align-items-start" style="padding-block-end: 50px;">
+				  		<div class="col-3">
+				  			<a target="_blank" href="{{ job[0][5] }}">
+				  				<img src="{{ job[0][1] }}" class="img-fluid" alt="{{ job[0][7] }}">
+				  			</a>
+				  		</div>
+				  		<div class="col-md-4">
+				  			<div class="row text-center">
+				  				<h5 class="fw-bolder">{{ job[0][0] }}</h5>
+				  				<span class="">{{ job[0][6] }}</span>
+				  			</div>
+				  		</div>
+				  		<div class="col-md">
+				  			<p><span class="text-decoration-underline fw-bolder">Value Added</span> {{ job[0][2] }}</p>
+					  		<p><span class="text-decoration-underline fw-bolder">Culture fit</span> {{ job[0][3] }}</p>
+							<p><span class="text-decoration-underline fw-bolder">Conclusion</span> {{ job[0][4] }}</p>
+				  		</div>
+				  	</div>
+				  	{% endfor %}
+		    	</div>
+		    	
+		    </div>
+
+		    <div class="tab-pane fade" id="v-pills-learning" role="tabpanel" aria-labelledby="v-pills-learning-tab">
+		    	<!-- Timeline -->
+			    <div class="timeline">
+		            <div class="container-timeline left">
+		                <div class="content overflow-auto">
+	                        <h2>2020</h2>
+                        	<ul class="marker-timeline">
+                        		<li>
+                        			<p>Obtaining the <a target="_blank" class="about-link" href="https://dauphine.psl.eu/formations/masters/informatique/m2-informatique-decisionnelle">Master’s degree in Computer Science and Analytics from Paris-Dauphine University.</a></p>
+                        		</li>
+                        		<li>
+                        			<p>Finishing my one-year « part-time » at <a target="_blank" class="about-link" href="https://www.loreal.com/fr/science-et-technologie-beaute/recherche-innovation-au-service-beaute/">L’Oréal R&I</a>.</p>
+                        		</li>
+                        		<li>
+                        			<p>Experimenting with an online Machine Learning course <a target="_blank" class="about-link" href="https://www.udemy.com/course/complete-machine-learning-and-data-science-zero-to-mastery/">ZeroToMastery: Complete Machine Learning</a> with structured mini projects after graduation.</p>
+                        		</li>
+                        	</ul>
+		                </div>
+		            </div>
+		            <div class="container-timeline right">
+		                <div class="content overflow-auto">
+	                        <h2>2018</h2>
+                            <ul class="marker-timeline">
+                                <li>
+                                    <p>Obtaining the <a target="_blank" class="about-link" href="https://sciences.sorbonne-universite.fr/formation-sciences/licences/licences-generales-l2-l3/licence-dinformatique">License’s degree in Computer Science at UPMC</a> (Paris-VI renamed Sorbonne University).</p>
+                                </li>
+                            </ul>
+		                </div>
+		            </div>
+		            <div class="container-timeline left">
+		                <div class="content overflow-auto">
+	                        <h2>2015</h2>
+                            <ul class="marker-timeline">
+                                <li>
+                                    <p><strong>High school diploma in Sciences</strong> with Maths option at Lycée Gérard de Nerval (Val d’Oise).</p>
+                                </li>
+                            </ul>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+
+		    
+
+		    <div class="tab-pane fade" id="v-pills-skills" role="tabpanel" aria-labelledby="v-pills-skills-tab">
+			  	<div class="pill">
+			  		<h6>Coding</h6>
+				  	<span class="badge bg-dark rounded-pill">Python</span>
+				  	<span class="badge bg-dark rounded-pill">Java</span>
+				  	<span class="badge bg-dark rounded-pill">C</span>
+			  	</div>
+				<div class="pill">
+					<h6>Data Wrangling, ML & Stats</h6>
+				  	<span class="badge bg-dark rounded-pill">Scikit-Learn</span>
+				  	<span class="badge bg-dark rounded-pill">TensorFlow</span>
+				  	<span class="badge bg-dark rounded-pill">pandas</span>
+				  	<span class="badge bg-dark rounded-pill">NumPy</span>
+				  	<span class="badge bg-dark rounded-pill">matplotlib</span>
+				</div>
+				<div class="pill">	
+					<h6>Web Development</h6>
+				  	<span class="badge bg-dark rounded-pill">HTML5</span>
+				  	<span class="badge bg-dark rounded-pill">CSS</span>
+				  	<span class="badge bg-dark rounded-pill">JavaScript</span>
+				  	<span class="badge bg-dark rounded-pill">PHP</span>
+				</div>
+				<div class="pill">
+					<h6>Data Management & Big Data technologies</h6>
+				  	<span class="badge bg-dark rounded-pill">ETL Talend</span>
+				  	<span class="badge bg-dark rounded-pill">SQL</span>
+				  	<span class="badge bg-dark rounded-pill">NoSQL MongoDB</span>
+				  	<span class="badge bg-dark rounded-pill">Hadoop/Spark/MapReduce</span>
+				</div>
+				<div class="pill">
+					<h6>OS & Source Control</h6>
+				  	<span class="badge bg-dark rounded-pill">Git</span>
+				  	<span class="badge bg-dark rounded-pill">Linux</span>
+				  	<span class="badge bg-dark rounded-pill">Windows</span>
+				</div>
+				<div class="pill">
+					<h6>Data Viz & Analytics</h6>
+				  	<span class="badge bg-dark rounded-pill">MS Power BI</span>
+				  	<span class="badge bg-dark rounded-pill">Qlick Sense</span>
+				  	<span class="badge bg-dark rounded-pill">SAS Analytics</span>
+				  	<span class="badge bg-dark rounded-pill">MS Excel</span>
+				</div>
+				<div class="pill">
+					<h6>Soft Skills</h6>
+				  	<span class="badge bg-dark rounded-pill">Lean & Agile development</span>
+				  	<span class="badge bg-dark rounded-pill">Interpersonal skills</span>
+				  	<span class="badge bg-dark rounded-pill">Basis of the business set-up</span>
+				  	<span class="badge bg-dark rounded-pill">French</span>
+				  	<span class="badge bg-dark rounded-pill">English</span>
+				  	<span class="badge bg-dark rounded-pill">Spanish</span>
+				</div>
+		    </div>
+
+		    <div class="tab-pane fade" id="v-pills-passions" role="tabpanel" aria-labelledby="v-pills-passions-tab">
+    			<div class="pill">
+			  		<h6 class="">Sport</h6>
+				  	<span class="badge bg-dark rounded-pill">Classic Danse</span>
+				  	<span class="badge bg-dark rounded-pill">Running</span>
+				  	<span class="badge bg-dark rounded-pill">Pilates</span>
+					
+			  	</div>
+			  	<div class="pill">
+			  		<h6>Hobbies</h6>
+				  	<span class="badge bg-dark rounded-pill">Sewing</span>
+				  	<span class="badge bg-dark rounded-pill">Fashion/Design</span>
+				  	<span class="badge bg-dark rounded-pill">Video Games</span>
+			  	</div>
+		    </div>
+		  </div>
 		</div>
 		
 		<!-- My Latest Project -->
-		<div class="container-fluid py-4">
+		<div>
 	    	<h4 class="alert-heading px-1">My Latest Project</h4>
 	    	{% for proj in projects %}
 	    	{% if proj[0][9] == 'yes' %}
@@ -53,7 +192,7 @@
 	        		<div class="col" style="max-width: 400px;">
 				      <img src="{{ proj[0][3] }}" class="img-fluid" alt="{{ proj[0][8] }}">
 				    </div>
-				    <div class="col-xl overflow-scroll">
+				    <div class="col-xl overflow-scroll px-4 py-2">
 				      <div class="card-body">
 				        <h5 class="card-title fw-bolder">{{ proj[0][0] }}</h5>
 				        <p class="card-text">{{ proj[0][1] }}</p>
