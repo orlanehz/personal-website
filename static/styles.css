@@ -26,11 +26,13 @@ main
 .navbar-brand, .navbar-brand:hover, .nav-link, .nav-link:hover
 {
     color: rgba(8, 8, 8, 1);
+    transition: opacity .35s ease-in-out;
 }
 
 .nav-link:hover
 {
   text-decoration: underline;
+  transition: opacity .35s ease-in-out;
 }
 
 .nav-link.active
@@ -89,11 +91,11 @@ header
 .hook
 {
   /* background-color: rgb(188, 189, 227); */
-  /* color: rgba(255, 255, 255, 0.6); */
+  color: rgba(255, 255, 255, 1);
   font-family: Copperplate;
-  /* background-image: url("/static/img/fusée.jpeg"); */
-  background-position: 1% 22%;
-  background-size: 1280px;
+  background-image: url("/static/img/datasciencedot.jpg");
+  background-position: 0% 60%;
+  background-size: 570px;
   background-repeat: repeat;
   /* padding-bottom: 60px !important; */
   /* padding-top: 60px !important; */
@@ -107,9 +109,9 @@ header
 
 .hook hr
 {
-  background-color: rgba(0, 0, 0, 1);
+  background-color: rgba(255, 255, 255, 1);
   height: 0.3px;
-  opacity: 1;
+  /*opacity: 1;*/
 }
 
 /* ------------------ */
