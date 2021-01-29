@@ -1,0 +1,13 @@
+
+                    <div class="dropdown">
+                      <button class="nav-link btn dropdown-toggle {% if id == active_page %} active {% endif%}" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: inherit; border-top-width: 0px !important;">
+                        {{ caption }}
+                      </button>
+
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="/about">About <span class="badge bg-secondary">READ ME!</span></a></li>
+                        <li><a class="dropdown-item" href="/static/docs/resume.pdf">Resume <span class="badge bg-secondary">PDF</span></a></li>
+                        <!-- Here create one if else to have the FR version of the CV
+                        <li><a class="dropdown-item" href="/static/docs/resume.pdf">Resume <span class="badge bg-primary">FR</span> <span class="badge bg-secondary">PDF</span></a></li>-->
+                      </ul>
+                    </div>
