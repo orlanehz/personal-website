@@ -30,7 +30,7 @@
 		  </div>
 
 		  <!-- Content -->
-		  <div class="container-fluid tab-content" id="v-pills-tabContent">
+		  <div class="container-fluid px-3 tab-content" id="v-pills-tabContent">
 		    <div class="tab-pane fade show active lh-lg" id="v-pills-intro" role="tabpanel" aria-labelledby="v-pills-intro-tab">
 			    <p>I'm from <strong>France</strong>, around <strong>Paris</strong>.</p>
 			    <p>I completed my studies in <strong>Data Science</strong> in October 2020 <strong>(Master’s Degree, Paris-Dauphine University)</strong>.</p>
@@ -45,18 +45,18 @@
 		    	<div class="container-fluid">
 		    		{% for job in career %}
 			    	<div class="row p-2 align-items-start" style="padding-block-end: 50px;">
-				  		<div class="col-md-3 pb-3">
+				  		<div class="col-3">
 				  			<a target="_blank" href="{{ job[0][5] }}">
 				  				<img src="{{ job[0][1] }}" class="img-fluid" alt="{{ job[0][7] }}">
 				  			</a>
 				  		</div>
-				  		<div class="col-sm-4 pb-3">
+				  		<div class="col-md-4">
 				  			<div class="row text-center">
 				  				<h5 class="fw-bolder">{{ job[0][0] }}</h5>
 				  				<span class="">{{ job[0][6] }}</span>
 				  			</div>
 				  		</div>
-				  		<div class="col-sm description overflow-scroll">
+				  		<div class="col-md">
 				  			<p><span class="text-decoration-underline fw-bolder">Value Added</span> {{ job[0][2] }}</p>
 					  		<p><span class="text-decoration-underline fw-bolder">Culture fit</span> {{ job[0][3] }}</p>
 							<p><span class="text-decoration-underline fw-bolder">Conclusion</span> <strong>{{ job[0][4] }}</strong></p>
