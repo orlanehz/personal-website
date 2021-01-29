@@ -94,7 +94,7 @@ header
   font-family: Copperplate;
   background-image: url("/static/img/datasciencedot.jpg");
   background-position: 0% 100%;
-  background-size: 600px;
+  background-size: contain;
   background-repeat: repeat;
   /* padding-bottom: 60px !important; */
   /* padding-top: 60px !important; */
@@ -111,6 +111,18 @@ header
   background-color: rgba(255, 255, 255, 1);
   height: 0.3px;
   /*opacity: 1;*/
+}
+
+/* Media queries - Responsive hook content on screens less than 300px wide */
+@media screen and (max-width: 400px) {
+  /* Change the image */
+  .hook
+  {
+    background-position: 0% 0%;
+    background-size: contain;
+    /* padding-bottom: 60px !important; */
+    /* padding-top: 60px !important; */
+  }
 }
 
 /* ------------------ */
@@ -434,7 +446,4 @@ header
 /* ------------------ */
 /* contact.html */
 /* ------------------ */
-
-
-
 
