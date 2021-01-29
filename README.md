@@ -1,7 +1,7 @@
 # Website
 > Building a portfolio website from scratch to showcase my data science projects. 
 
-<p align="center">🔗 https://www.orlanehouzet.com</p>
+<p align="center">🔗 https://www.orlanehouzet.com 🔗</p>
 
 ![](static/img/capture_ecran_website.png)
 
