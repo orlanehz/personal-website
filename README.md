@@ -4,7 +4,7 @@
 ![](static/img/capture_ecran_website.png)
 
 I was guided by this Medium blog post: 
-**How to Build a Data Science Portfolio Website** (https://towardsdatascience.com/how-to-build-a-data-science-portfolio-website-335b0f253822) by Julia Nikulski.
+[How to Build a Data Science Portfolio Website](https://towardsdatascience.com/how-to-build-a-data-science-portfolio-website-335b0f253822) by Julia Nikulski.
 
 ## Development setup
 
