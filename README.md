@@ -1,5 +1,5 @@
 # Website
-> Building a portfolio website from scratch to showcase my data science projects. 🔗 https://www.orlanehouzet.com 🖥
+> Building a portfolio website from scratch to showcase my data science projects. 🔗 https://www.orlanehouzet.com
 
 ![](static/img/capture_ecran_website.png)
 
