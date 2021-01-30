@@ -27,9 +27,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Oxygen&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
 
-
-    
-
   </head>
   <body>
       {% set navbar_menus = [
@@ -44,10 +41,6 @@
       <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container-fluid">
           <a class="navbar-brand {% if active_page == 'index' %} visually-hidden {% endif%}" id="{{ id }}-navbarbrand" href="/index" style="margin-right: 0.25em; font-size: larger; font-family: 'Ubuntu', sans-serif;">ORLANE HOUZET</a>
-          
-          <!--<div class="{% if active_page == 'index' %} visually-hidden {% endif%}"> | </div>-->
-          <!--<a class="{% if active_page == 'index' %} visually-hidden {% endif%}" href="/index"><img  src="https://img.icons8.com/ios/50/000000/rocket--v2.png" style="height: 1.2em; padding: 0 0.25em; color: red"/></a>-->
-          
           <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -70,8 +63,6 @@
                         <li><a class="dropdown-item" target="_blank" href="https://drive.google.com/file/d/1bqbazhrtvhtvOwER7oKtl9BtwiOYT6ZW/view?usp=sharing">Resume - FR <span class="badge bg-secondary">PDF</span></a></li>
                       </ul>
                     </div>
-
-
                   </li>-->
                 {% else%}
                   <li class="nav-item">
@@ -98,7 +89,6 @@
                     <a target="_blank" class="nav-link" id="index-nav-link" href="https://www.linkedin.com/in/orlane-houzet/">LinkedIn</a>
                 </li>
                 <!--
-                <li class="nav-item pt-1">🚀</li>
                 <li class="nav-item">
                     <form method="post">
                         <button type="submit" name="lang" class="btn" id="index-btn-lang" value="fr">FR</button>

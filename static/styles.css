@@ -89,15 +89,15 @@ header
 
 .hook
 {
-  /* background-color: rgb(188, 189, 227); */
   color: rgba(255, 255, 255, 1);
   font-family: Copperplate;
   background-color: rgb(0, 0, 0);
   
-  /*background-image: url("/static/img/datasciencedot.jpg");
+  /* background-color: rgb(188, 189, 227);
+  background-image: url("/static/img/datasciencedot.jpg");
   background-position: 0% 100%;
   background-size: contain;
-  background-repeat: repeat;*/
+  background-repeat: repeat; */
   /* padding-bottom: 60px !important; */
   /* padding-top: 60px !important; */
 }
@@ -120,8 +120,8 @@ header
   /* Change the image */
   .hook
   {
-    background-position: 0% 0%;
-    background-size: contain;
+    /* background-position: 0% 0%;
+    background-size: contain; */
     /* padding-bottom: 60px !important; */
     /* padding-top: 60px !important; */
   }
@@ -163,8 +163,6 @@ header
   font-size: medium;
 }
 
-
-
 /* Media queries - Responsive pills content on screens less than 600px wide */
 @media screen and (max-width: 1000px) {
 /* Add a padding to the top */
@@ -189,9 +187,6 @@ header
     margin: 2px;
   }
 }
-
-
-
 
 
 
@@ -236,7 +231,6 @@ header
 {
   font-size: medium;
 }
-
 
 
 /* -- Learning Path -- */
@@ -390,7 +384,6 @@ header
     text-decoration-style: dotted;
     font-weight: bolder;
 }
-
 
 
 /* ------------------ */

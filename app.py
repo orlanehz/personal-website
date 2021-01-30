@@ -2,14 +2,6 @@ from flask import Flask, render_template, url_for, request
 import helper
 import os
 
-
-# CONFIRMER ? voir site web install PostgreSQL
-#from flask.ext.sqlalchemy import SQLAlchemy
-#app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://localhost/orlanehouzet'
-#db = SQLAlchemy(app)
-
-
-# Configure application
 app = Flask(__name__)
 
 @app.route('/index', methods=['POST', 'GET'])

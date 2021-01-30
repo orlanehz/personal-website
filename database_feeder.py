@@ -3,7 +3,6 @@ import numpy as np
 import psycopg2
 import os
 
-
 # read in all necessary Excel files
 portfolio_df = pd.read_excel("database/portfolio_db.xlsx")
 career_df = pd.read_excel("database/career_db.xlsx")
@@ -13,8 +12,7 @@ DATABASE_URL = os.environ['DATABASE_URL']
 conn = psycopg2.connect(DATABASE_URL, sslmode='require')
 cur = conn.cursor()
 
-
-
+# portfolio_db
 cur.execute("DROP TABLE portfolio")
 cur.execute("CREATE TABLE IF NOT EXISTS portfolio \
             (id SERIAL, title text, description text, skills text, \
@@ -22,7 +20,6 @@ cur.execute("CREATE TABLE IF NOT EXISTS portfolio \
 
 # select everything from the portfolio database
 cur.execute("TRUNCATE portfolio RESTART IDENTITY")
-
 
 # read the data into the portfolio database
 # iterate through the dataframe generated from the Excel file
@@ -35,8 +32,7 @@ for portfolio_row in portfolio_df.itertuples():
     conn.commit()
 
 
-
-
+# career_db
 cur.execute("DROP TABLE career")
 cur.execute("CREATE TABLE IF NOT EXISTS career \
             (id SERIAL, title text NOT NULL, image text, value_added text, \
@@ -44,7 +40,6 @@ cur.execute("CREATE TABLE IF NOT EXISTS career \
 
 # select everything from the career database
 cur.execute("TRUNCATE career RESTART IDENTITY")
-
 
 # read the data into the career database
 # iterate through the dataframe generated from the Excel file
