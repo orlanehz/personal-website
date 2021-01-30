@@ -11,8 +11,7 @@ I was guided by this Medium blog post:
 ## Development setup
 
 Technologies and concepts I used:
-HTML5 - CSS - Bootstrap v5.0 - JavaScript - Flask - Jinja - Heroku
-
+Flask, HTML, CSS, Bootstrap, Jinja, Heroku, PostgreSQL
 
 ## Release History
 
