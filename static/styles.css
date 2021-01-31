@@ -179,7 +179,12 @@ header
 
 /* Media queries - Responsive pills content on screens less than 600px wide */
 @media screen and (max-width: 1000px) {
-/* Add a padding to the top */
+  /* Adjust the padding */
+  #v-pills-tabContent
+  {
+    padding-top:0px;
+  }
+
   #v-pills-tab .nav-link
   {
     padding-right:0px;
