@@ -115,7 +115,7 @@ header
   /*opacity: 1;*/
 }
 
-/* Media queries - Responsive hook content on screens less than 1000px wide */
+/* Media queries - Responsive content on screens less than 1000px wide */
 @media screen and (max-width: 1000px) {
 
   .navbar-collapse
@@ -127,10 +127,7 @@ header
   /* Adapt the hook */
   .hook
   {
-    /* background-position: 0% 0%;
-    background-size: contain; */
-    /* padding-bottom: 60px !important; */
-    /* padding-top: 60px !important; */
+    margin-bottom: 10px !important;
   }
 
   .hook h1
@@ -183,20 +180,14 @@ header
 /* Media queries - Responsive pills content on screens less than 600px wide */
 @media screen and (max-width: 1000px) {
 /* Add a padding to the top */
-  #v-pills-tabContent
+  #v-pills-tab .nav-link
   {
-    padding-top:30px;
+    padding-right:0px;
   }
 
-  #v-pills-intro
+  #v-pills-career .container-fluid
   {
-    padding:5px;
-  }
-
-  #v-pills-career .description
-  {
-    height: fit-content;
-    padding-bottom:20px;
+    padding-left:0px;
   }
 
   #v-pills-skills .badge, #v-pills-passions .badge

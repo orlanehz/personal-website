@@ -7,7 +7,7 @@
 {% block main %}
 	
 	<!-- Hook -->
-	<div class="hook text-center p-5">
+	<div class="hook text-center p-sm-5 p-2">
 		<hr>
 		<h1 class="display-3 text-uppercase" style="margin-bottom: 0px !important;">Orlane Houzet</h1>
 		<p class="lead">Data Science, Design & Creative Innovation</p>
@@ -18,9 +18,9 @@
 
 	<div class="home-content p-sm-5 p-2">
 
-		<div class="d-lg-flex align-items-start shadow p-4 mb-5 bg-white rounded" style="background-color: rgba(0, 0, 0, 0.0);" style="max-height: 500px;">
+		<div class="d-flex align-items-start shadow-sm p-sm-4 py-2 mb-5 bg-white rounded" style="background-color: rgba(0, 0, 0, 0.0);" style="max-height: 500px;">
 		  <!-- Navs -->
-		  <div class="nav flex-column nav-pills me-3 text-nowrap" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+		  <div class="nav flex-column nav-pills me-sm-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
 		    <a class="nav-link active" id="v-pills-intro-tab" data-bs-toggle="pill" href="#v-pills-intro" role="tab" aria-controls="v-pills-intro" aria-selected="true" style="padding-top: 0px;">Me in 15 seconds</a>
 		    <a class="nav-link" id="v-pills-career-tab" data-bs-toggle="pill" href="#v-pills-career" role="tab" aria-controls="v-pills-career" aria-selected="false">Career</a>
 		    <a class="nav-link" id="v-pills-learning-tab" data-bs-toggle="pill" href="#v-pills-learning" role="tab" aria-controls="v-pills-learning" aria-selected="false">Learning Path</a>
@@ -31,7 +31,7 @@
 
 		  <!-- Content -->
 		  <div class="container-fluid p-sm-0 tab-content" id="v-pills-tabContent">
-		    <div class="tab-pane fade show active lh-lg px-sm-2" id="v-pills-intro" role="tabpanel" aria-labelledby="v-pills-intro-tab">
+		    <div class="tab-pane fade show active lh-lg px-sm-2 pb-2" id="v-pills-intro" role="tabpanel" aria-labelledby="v-pills-intro-tab">
 			    <p>I'm from <strong>France</strong>, around <strong>Paris</strong>.</p>
 			    <p>I completed my studies in <strong>Data Science</strong> in October 2020 <strong>(Master’s Degree, Paris-Dauphine University)</strong>.</p>
 			    <p>The use of <strong>new technologies</strong> has always fascinated me. I am also passioned by <strong>fashion and design, creation, and quality</strong>. For 2 years, my new pastime is sewing.</p>
@@ -44,13 +44,13 @@
 		    <div class="tab-pane fade" id="v-pills-career" role="tabpanel" aria-labelledby="v-pills-career-tab">
 		    	<div class="container-fluid">
 		    		{% for job in career %}
-			    	<div class="row p-2 align-items-start" style="padding-block-end: 50px;">
-				  		<div class="col-md-3 pb-3">
+			    	<div class="row align-items-start" style="padding-block-end: 30px;">
+				  		<div class="col-md-3 pb-4">
 				  			<a target="_blank" href="{{ job[0][5] }}">
 				  				<img src="{{ job[0][1] }}" class="img-fluid" alt="{{ job[0][7] }}">
 				  			</a>
 				  		</div>
-				  		<div class="col-sm-4 pb-3">
+				  		<div class="col-sm-4 pb-4">
 				  			<div class="row text-center">
 				  				<h5 class="fw-bolder">{{ job[0][0] }}</h5>
 				  				<span class="">{{ job[0][6] }}</span>
@@ -209,7 +209,7 @@
 	        		<div class="col" style="max-width: 400px;">
 				      <img src="{{ proj[0][3] }}" class="img-fluid" alt="{{ proj[0][8] }}">
 				    </div>
-				    <div class="col-xl overflow-scroll px-4 py-2">
+				    <div class="col-xl px-sm-4 py-2">
 				      <div class="card-body">
 				        <h5 class="card-title fw-bolder">{{ proj[0][0] }}</h5>
 				        <p class="card-text">{{ proj[0][1] }}</p>
