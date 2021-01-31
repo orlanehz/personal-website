@@ -200,7 +200,7 @@
 		</div>
 		
 		<!-- My Latest Project -->
-		<div>
+		<div id="latest-project">
 	    	<h4 class="alert-heading px-1">My Latest Project</h4>
 	    	{% for proj in projects %}
 	    	{% if proj[0][9] == 'yes' %}
@@ -209,7 +209,7 @@
 	        		<div class="col" style="max-width: 400px;">
 				      <img src="{{ proj[0][3] }}" class="img-fluid" alt="{{ proj[0][8] }}">
 				    </div>
-				    <div class="col-xl px-sm-4 px-4 py-2">
+				    <div class="description col-xl px-sm-4">
 				      <div class="card-body">
 				        <h5 class="card-title fw-bolder">{{ proj[0][0] }}</h5>
 				        <p class="card-text">{{ proj[0][1] }}</p>
