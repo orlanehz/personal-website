@@ -177,12 +177,12 @@ header
   font-size: medium;
 }
 
-/* Media queries - Responsive pills content on screens less than 600px wide */
+/* Media queries - Responsive pills content on screens less than 1000px wide */
 @media screen and (max-width: 1000px) {
   /* Adjust the padding */
   #v-pills-tab
   {
-    padding-top: 10px;
+    padding-top: 8px;
   }
 
   #v-pills-tabContent
