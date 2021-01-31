@@ -182,7 +182,7 @@ header
   /* Adjust the padding */
   #v-pills-tab
   {
-    padding-top: 8px;
+    padding-top: 0.25em;
   }
 
   #v-pills-tabContent
