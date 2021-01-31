@@ -180,6 +180,11 @@ header
 /* Media queries - Responsive pills content on screens less than 600px wide */
 @media screen and (max-width: 1000px) {
   /* Adjust the padding */
+  #v-pills-tab
+  {
+    padding-top: 10px;
+  }
+  
   #v-pills-tabContent
   {
     padding-top:0px;
