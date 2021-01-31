@@ -115,15 +115,32 @@ header
   /*opacity: 1;*/
 }
 
-/* Media queries - Responsive hook content on screens less than 300px wide */
-@media screen and (max-width: 400px) {
-  /* Change the image */
+/* Media queries - Responsive hook content on screens less than 1000px wide */
+@media screen and (max-width: 1000px) {
+
+  .navbar-collapse
+  {
+    padding-left: 15px;
+    font-size: smaller;
+  }
+
+  /* Adapt the hook */
   .hook
   {
     /* background-position: 0% 0%;
     background-size: contain; */
     /* padding-bottom: 60px !important; */
     /* padding-top: 60px !important; */
+  }
+
+  .hook h1
+  {
+    font-size: calc(1.525rem + 2vw);
+  }
+  
+  .hook .lead
+  {
+    font-size: 1.2rem;
   }
 }
 
@@ -186,6 +203,12 @@ header
   {
     margin: 2px;
   }
+
+  #v-pills-skills .pill div, #v-pills-passions .pill div
+  {
+    max-width: 230px;
+  }
+   
 }
 
 
@@ -230,6 +253,7 @@ header
 #v-pills-skills .badge, #v-pills-passions .badge
 {
   font-size: medium;
+  margin: 0.1em;
 }
 
 
@@ -344,7 +368,7 @@ header
 
 /* Make sure that all arrows are pointing leftwards */
   .content .marker-timeline {
-    width:300px;
+    /*width:300px;*/
   }
 
 /* Make sure that all arrows are pointing leftwards */
