@@ -1,14 +1,14 @@
 body
 {
   background-color: var(--white);
-  font-family: 'Oxygen', sans-serif;
+  font-family: 'Bangla Sangam MN;', sans-serif;
   color: rgba(8, 8, 8, 1);
   font-size: larger;
 }
 
 main
 {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Apple SD Gothic Neo', sans-serif;
   min-height: 40em; /* ou 400px */
   font-size: medium;
 }
@@ -115,6 +115,11 @@ header
   /*opacity: 1;*/
 }
 
+#latest-project h4
+{
+  font-family: 'Bangla Sangam MN', sans-serif;
+}
+
 /* Media queries - Responsive content on screens less than 1000px wide */
 @media screen and (max-width: 1000px) {
 
@@ -182,7 +187,7 @@ header
   /* Adjust the padding */
   #v-pills-tab
   {
-    padding-top: 0.25em;
+    padding-top: 0em;
   }
 
   #v-pills-tabContent
