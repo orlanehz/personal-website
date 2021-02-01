@@ -238,8 +238,7 @@ header
 
 #v-pills-career .description p
 {
-  /*width: 200px;
-  overflow-x: scroll;*/
+  text-align: justify;
 }
 
 
