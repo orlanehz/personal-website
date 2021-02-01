@@ -201,6 +201,11 @@ header
     padding-right:0px;
   }
 
+  #v-pills-intro
+  {
+    text-align: justify;
+  }
+
   #v-pills-career .container-fluid
   {
     padding-left:0px;
