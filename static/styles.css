@@ -241,9 +241,32 @@ header
   text-decoration-style: dotted;
 }
 
+#v-pills-tab .nav-link
+{
+  text-decoration: underline;
+}
+
+#v-pills-tab .nav-link.active
+{
+  text-decoration: underline;
+  text-decoration-style: double;
+}
+
+#v-pills-tab .nav-link:hover
+{
+  text-decoration: underline;
+  transition: opacity .35s ease-in-out;
+  text-decoration-style: double;
+}
+
 #v-pills-career .description p
 {
   text-align: justify;
+}
+
+#v-pills-career .description span
+{
+  text-align: start;
 }
 
 
@@ -481,4 +504,5 @@ header
 /* ------------------ */
 /* contact.html */
 /* ------------------ */
+
 
