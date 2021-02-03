@@ -132,8 +132,12 @@ header
   {
     padding-left: 5px;
     font-size: medium;
-    display: inline-flex;
     font-family: 'Apple SD Gothic Neo', sans-serif;
+  }
+
+  .navbar-nav
+  {
+    display: inline-flex;
   }
 
   /* Adapt the hook */
@@ -150,6 +154,11 @@ header
   .hook .lead
   {
     font-size: 1.2rem;
+  }
+
+  footer .copyright
+  {
+    font-size: small;
   }
 }
 
