@@ -31,7 +31,7 @@
 
 		  <!-- Content -->
 		  <div class="container-fluid p-sm-0 tab-content" id="v-pills-tabContent">
-		    <div class="tab-pane fade show active lh-md px-sm-2" id="v-pills-intro" role="tabpanel" aria-labelledby="v-pills-intro-tab">
+		    <div class="tab-pane fade show active lh-md px-sm-3" id="v-pills-intro" role="tabpanel" aria-labelledby="v-pills-intro-tab">
 			    <p>I'm from <strong>France</strong>, around <strong>Paris</strong>.</p>
 			    <p>I completed my studies in <strong>Data Science</strong> in October 2020 <strong>(Master’s Degree, Paris-Dauphine University)</strong>.</p>
 			    <p>The use of <strong>new technologies</strong> has always fascinated me. I am also passioned by <strong>fashion and design, creation, and quality</strong>. For 2 years, my new pastime is sewing.</p>
@@ -46,10 +46,10 @@
 			    
 		    </div>
 
-		    <div class="tab-pane fade" id="v-pills-career" role="tabpanel" aria-labelledby="v-pills-career-tab">
+		    <div class="tab-pane fade px-sm-3" id="v-pills-career" role="tabpanel" aria-labelledby="v-pills-career-tab">
 		    	<div class="container-fluid">
 		    		{% for job in career %}
-			    	<div class="row align-items-start px-sm-5" style="padding-block-end: 30px;">
+			    	<div class="row align-items-start" style="padding-block-end: 30px;">
 				  		<div class="col-md-3 logo pb-4 text-center">
 				  			<a target="_blank" href="{{ job[0][5] }}">
 				  				<img src="{{ job[0][1] }}" class="img-fluid" alt="{{ job[0][7] }}">
