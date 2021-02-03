@@ -44,7 +44,7 @@
           </button>
           <a class="navbar-brand {% if active_page == 'index' %}visually-hidden{% endif%}" id="{{ id }}-navbarbrand" href="/index" style="margin-right: 0.25em;">ORLANE HOUZET</a>
           <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav me-auto mb-4 mb-lg-0">
+            <ul class="navbar-nav me-auto mb-lg-0">
             {% for href, id, caption in navbar_menus %}
                 {% if id == "about" %}
                   <!--<li class="nav-item">
