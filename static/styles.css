@@ -223,6 +223,11 @@ header
     padding-left:0px;
   }
 
+  #v-pills-career .logo img
+  {
+    width: 50%;
+  }
+
   #v-pills-skills .badge, #v-pills-passions .badge
   {
     margin: 2px;
