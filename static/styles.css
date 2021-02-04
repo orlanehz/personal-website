@@ -260,7 +260,7 @@ header
 
 #v-pills-tab .nav-link
 {
-  text-decoration: underline;
+  /*text-decoration: underline;*/
 }
 
 #v-pills-tab .nav-link.active
