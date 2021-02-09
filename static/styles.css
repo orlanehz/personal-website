@@ -9,7 +9,7 @@ body
 main
 {
   font-family: 'Apple SD Gothic Neo', sans-serif;
-  min-height: 40em; /* ou 400px */
+  min-height: 50em;
   font-size: medium;
 }
 
@@ -19,13 +19,13 @@ main
 
 .navbar
 {
-    min-height:50px;
-    background-color: white;
+  min-height:50px;
+  background-color: white;
 }
 
 .navbar-brand, .navbar-brand:hover, .nav-link, .nav-link:hover
 {
-    color: rgba(8, 8, 8, 1);
+  color: rgba(8, 8, 8, 1);
 }
 
 .nav-link:hover
@@ -40,9 +40,9 @@ main
 }
 
 .navbar-toggler:focus {
-    text-decoration: none;
-    outline: 0;
-    box-shadow: 0 0 0 0;
+  text-decoration: none;
+  outline: 0;
+  box-shadow: 0 0 0 0;
 }
 
 .navbar-toggler-icon
@@ -50,67 +50,15 @@ main
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='1' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")!important;
 }
 
-header
-{
-  /*background: -webkit-linear-gradient(0deg, #7f34d2b8 0%, #ff076800 100%);*/
-  font-size: 25px;
-  margin-top: 10px;
-  padding: 15px 30px;
-  font-weight: 300;
-  text-align: initial;
-  color: rgba(8, 8, 8, 1);
-}
-
-/* FR button à enlever
-#index-btn-lang
-{
-    color:#212529;
-    background-color:#f8f9fa;
-    border-radius:20px;
-    margin-left:10px;
-}
-
-#index-btn-lang:hover
-{
-    color:#e9ecef;
-    background-color:#0062cc;
-    border-radius:20px;
-}*/
-
 /* ------------------ */
 /* index.html */
 /* ------------------ */
-
-/* personalization of my name in index page */
-#index-navbarbrand
-{
-
-}
-
-.intro dt
-{
-  text-decoration: underline;
-}
 
 .hook
 {
   color: rgba(255, 255, 255, 1);
   font-family: Bangla Sangam MN, sans-serif;
   background-color: rgb(0, 0, 0);
-  
-  /* background-color: rgb(188, 189, 227);
-  background-image: url("/static/img/datasciencedot.jpg");
-  background-position: 0% 100%;
-  background-size: contain;
-  background-repeat: repeat; */
-  /* padding-bottom: 60px !important; */
-  /* padding-top: 60px !important; */
-}
-
-.hook .lead
-{
-  /*background-color: rgb(188, 189, 227);*/
-  /*color: rgba(255, 255, 255, 0.6);*/
 }
 
 .hook hr
@@ -157,45 +105,84 @@ header
   }
 }
 
-/* ------------------ */
-/* about.html */
-/* ------------------ */
+#v-pills-tab .nav-link
+{
+  /*text-decoration: underline;*/
+}
 
-/* -- Intro -- */
+#v-pills-tab .nav-link:hover
+{
+  text-decoration: underline;
+  text-decoration-style: double;
+  transition: opacity .35s ease-in-out;
+}
 
-.nav-pills .nav-link.active
+#v-pills-tab .nav-link.active
 {
   background-color: var(--white);
   color: rgba(8, 8, 8, 1);
   border-radius:10px;
+  text-decoration: underline;
+  text-decoration-style: double;
 }
 
-.accordion-item
-{
-  padding-bottom: 10px;
-}
+/* Contact links */
 
-.accordion-collapse
+#v-pills-intro a
 {
-  max-height: 450px;
-  overflow: scroll;
-}
-
-.accordion-button:not(.collapsed) 
-{
-  background-color: var(--white);
   color: rgba(8, 8, 8, 1);
 }
 
-.accordion-button
+#v-pills-intro a:hover
 {
-  display: inline;
-  font-size: medium;
+  color: #157347;
+  text-decoration-style: dotted;
 }
+
+
+#v-pills-career .description p
+{
+  text-align: justify;
+}
+
+#v-pills-career .description span
+{
+  text-align: start;
+}
+
+#v-pills-career .logo img
+  {
+    max-width: 60%;
+  }
+
+#v-pills-skills, #v-pills-passions
+{
+  text-align: center;
+}
+
+#v-pills-skills .pill, #v-pills-passions .pill
+{
+  padding-bottom: 30px;
+}
+
+#v-pills-skills h6, #v-pills-passions h6
+{
+  /*font-family: Arial;*/
+  font-size: large;
+  text-decoration: underline;
+  padding-bottom: 5px;
+}
+
+#v-pills-skills .badge, #v-pills-passions .badge
+{
+  font-size: medium;
+  margin: 0.1em;
+}
+
 
 /* Media queries - Responsive pills content on screens less than 1000px wide */
 @media screen and (max-width: 1000px) {
-  /* Adjust the padding */
+  /* Adjust the padding, margin...*/
   #v-pills-tab
   {
     padding-top: 0em;
@@ -242,76 +229,7 @@ header
   {
     padding: 5px;
   }
-   
 }
-
-
-
-#v-pills-intro a
-{
-  color: rgba(8, 8, 8, 1);
-}
-
-#v-pills-intro a:hover
-{
-  color: #157347;
-  text-decoration-style: dotted;
-}
-
-#v-pills-tab .nav-link
-{
-  /*text-decoration: underline;*/
-}
-
-#v-pills-tab .nav-link.active
-{
-  text-decoration: underline;
-  text-decoration-style: double;
-}
-
-#v-pills-tab .nav-link:hover
-{
-  text-decoration: underline;
-  transition: opacity .35s ease-in-out;
-  text-decoration-style: double;
-}
-
-#v-pills-career .description p
-{
-  text-align: justify;
-}
-
-#v-pills-career .description span
-{
-  text-align: start;
-}
-
-
-#v-pills-skills, #v-pills-passions
-{
-  text-align: center;
-}
-
-#v-pills-skills .pill, #v-pills-passions .pill
-{
-  padding-bottom: 30px;
-}
-
-
-#v-pills-skills h6, #v-pills-passions h6
-{
-  /*font-family: Arial;*/
-  font-size: large;
-  text-decoration: underline;
-  padding-bottom: 5px;
-}
-
-#v-pills-skills .badge, #v-pills-passions .badge
-{
-  font-size: medium;
-  margin: 0.1em;
-}
-
 
 /* -- Learning Path -- */
 
@@ -518,9 +436,14 @@ header
 /* blog.html */
 /* ------------------ */
 
-/* ------------------ */
-/* contact.html */
-/* ------------------ */
+#medium
+{
+  color: rgba(8, 8, 8, 1);
+}
 
-
+#medium:hover
+{
+  color: #157347;
+  text-decoration-style: dotted;
+}
 

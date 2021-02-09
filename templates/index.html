@@ -7,18 +7,16 @@
 {% block main %}
 	
 	<!-- Hook -->
-	<div class="hook text-center p-sm-4 p-2">
+	<div class="hook text-center p-sm-2 p-2">
 		<hr>
 		<h1 class="display-3 text-uppercase mb-0">Orlane Houzet</h1>
 		<p class="lead">Data Science, Design & Creative Innovation</p>
 		<hr>
 	</div>
-	
-	<!--<p class="text-center">This place is about to communicate on my Data Science Portfolio.</p>-->
 
-	<div class="home-content p-sm-5 pt-sm-2 p-2">
+	<div class="home-content px-sm-5 pt-sm-2 p-2">
 
-		<div class="d-flex align-items-start shadow-sm p-sm-4 py-2 mb-5 bg-white rounded" style="background-color: rgba(0, 0, 0, 0.0);" style="max-height: 500px;">
+		<div class="d-flex align-items-start shadow-sm p-sm-4 py-2 mb-3 bg-white rounded" style="background-color: rgba(0, 0, 0, 0.0);" style="max-height: 500px;">
 		  <!-- Navs -->
 		  <div class="nav flex-column nav-pills me-sm-3" id="v-pills-tab" role="tablist" aria-orientation="vertical" style="white-space: nowrap;">
 		    <a class="nav-link active" id="v-pills-intro-tab" data-bs-toggle="pill" href="#v-pills-intro" role="tab" aria-controls="v-pills-intro" aria-selected="true" style="padding-top: 0em;">About Me</a>
@@ -26,7 +24,6 @@
 		    <a class="nav-link" id="v-pills-learning-tab" data-bs-toggle="pill" href="#v-pills-learning" role="tab" aria-controls="v-pills-learning" aria-selected="false">Education</a>
 		    <a class="nav-link" id="v-pills-skills-tab" data-bs-toggle="pill" href="#v-pills-skills" role="tab" aria-controls="v-pills-skills" aria-selected="false">Skills</a>
 		    <a class="nav-link" id="v-pills-passions-tab" data-bs-toggle="pill" href="#v-pills-passions" role="tab" aria-controls="v-pills-passions" aria-selected="false">Passions</a>
-		    <!--<a class="nav-link" id="v-pills-resume-tab" data-bs-toggle="pill" href="#v-pills-resume" role="tab" aria-controls="v-pills-resume" aria-selected="false">Resume</a>-->
 		  </div>
 
 		  <!-- Content -->
@@ -206,7 +203,7 @@
 		</div>
 		
 		<!-- My Latest Project -->
-		<div id="latest-project">
+		<div id="latest-project" class="pt-3">
 	    	<h4 class="alert-heading px-1">My Latest Project</h4>
 	    	{% for proj in projects %}
 	    	{% if proj[0][9] == 'yes' %}
