@@ -138,7 +138,6 @@ main
   text-decoration-style: dotted;
 }
 
-
 #v-pills-career .description p
 {
   text-align: justify;
@@ -178,6 +177,15 @@ main
   margin: 0.1em;
 }
 
+
+@media screen and (max-width: 1400px) {
+  #v-pills-intro .id-picture
+  {
+    visibility: hidden;
+    height: 0px;
+    width: 0px;
+  }
+}
 
 /* Media queries - Responsive pills content on screens less than 1000px wide */
 @media screen and (max-width: 1000px) {
