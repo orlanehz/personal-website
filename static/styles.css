@@ -148,10 +148,14 @@ main
   text-align: start;
 }
 
+#v-pills-career .logo{
+  width: 20%
+}
+
 #v-pills-career .logo img
-  {
-    max-width: 60%;
-  }
+{
+  max-width: 60%;
+}
 
 #v-pills-skills, #v-pills-passions
 {
@@ -217,6 +221,10 @@ main
     padding-left:0px;
   }
 
+  #v-pills-career .logo{
+    width: 100%
+  }
+
   #v-pills-career .logo img
   {
     width: 50%;
@@ -243,7 +251,7 @@ main
 /* The actual timeline (the vertical ruler) */
 .timeline {
   position: relative;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 

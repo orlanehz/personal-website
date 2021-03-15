@@ -52,8 +52,8 @@
 		    <div class="tab-pane fade px-sm-3" id="v-pills-career" role="tabpanel" aria-labelledby="v-pills-career-tab">
 		    	<div class="container-fluid">
 		    		{% for job in career %}
-			    	<div class="row align-items-start" style="padding-block-end: 30px;">
-				  		<div class="col-md-3 logo pb-4 text-center">
+			    	<div class="row" style="padding-block-end: 30px;">
+				  		<div class="col-md-2 logo pb-4 text-center">
 				  			<a target="_blank" href="{{ job[0][5] }}">
 				  				<img src="{{ job[0][1] }}" class="img-fluid" alt="{{ job[0][7] }}">
 				  			</a>
@@ -78,6 +78,19 @@
 		    <div class="tab-pane fade" id="v-pills-learning" role="tabpanel" aria-labelledby="v-pills-learning-tab">
 		    	<!-- Timeline -->
 			    <div class="timeline">
+			    	<div class="container-timeline right">
+		                <div class="content overflow-auto">
+	                        <h2>2021</h2>
+                            <ul class="marker-timeline">
+                                <li>
+                                    <p>Eager to start my early-career as an <strong>ML Engineer / Data Scientist</strong> in a Tech or data-driven company, as I am passionate about every application-driven project around <strong>Artificial Intelligence and Software Engineering</strong>. From there, I also envision sharing my experience as a graduate in the field of AI in the years 2020/2021.</p>
+                                </li>
+                                <li>
+                                	<p>Launching a personal website [<a target="_blank" class="about-link" href="https://www.orlanehouzet.com">www.orlanehouzet.com</a>] was the perfect way to showcase my hobby projects and interests.</p>
+                                </li>
+                            </ul>
+		                </div>
+		            </div>
 		            <div class="container-timeline left">
 		                <div class="content overflow-auto">
 	                        <h2>2020</h2>
@@ -136,6 +149,7 @@
 					  	<span class="badge bg-dark rounded-pill">Scikit-Learn</span>
 					  	<span class="badge bg-dark rounded-pill">TensorFlow</span>
 					  	<span class="badge bg-dark rounded-pill">Keras</span>
+					  	<span class="badge bg-dark rounded-pill">Jupyter/Colab</span>
 					</div>
 				</div>
 				<div class="pill">	
@@ -145,6 +159,7 @@
 					  	<span class="badge bg-dark rounded-pill">CSS</span>
 					  	<span class="badge bg-dark rounded-pill">JavaScript</span>
 					  	<span class="badge bg-dark rounded-pill">PHP</span>
+					  	<span class="badge bg-dark rounded-pill">XML</span>
 					</div>
 				</div>
 				<div class="pill">
@@ -154,6 +169,14 @@
 					  	<span class="badge bg-dark rounded-pill">NoSQL MongoDB</span>
 					  	<span class="badge bg-dark rounded-pill">ETL Talend</span>
 					  	<span class="badge bg-dark rounded-pill">Hadoop/Spark/MapReduce</span>
+					</div>
+				</div>
+				<div class="pill">
+					<h6>Cloud provider (Currently learning)</h6>
+					<div class="container-fluid">
+					  	<span class="badge bg-dark rounded-pill">GCP</span>
+					  	<span class="badge bg-dark rounded-pill">Azure</span>
+					  	<span class="badge bg-dark rounded-pill">AWS</span>
 					</div>
 				</div>
 				<div class="pill">
@@ -191,16 +214,16 @@
     			<div class="pill">
 			  		<h6 class="">Sport</h6>
 			  		<div class="container-fluid">
-					  	<span class="badge bg-dark rounded-pill">Classic Danse</span>
-					  	<span class="badge bg-dark rounded-pill">Running</span>
 					  	<span class="badge bg-dark rounded-pill">Pilates</span>
+					  	<span class="badge bg-dark rounded-pill">Running</span>
+					  	<span class="badge bg-dark rounded-pill">Classic Danse</span>
 					</div>
 			  	</div>
 			  	<div class="pill">
 			  		<h6>Hobbies</h6>
 			  		<div class="container-fluid">
 			  			<span class="badge bg-dark rounded-pill">Sewing</span>
-					  	<span class="badge bg-dark rounded-pill">Fashion/Design</span>
+					  	<span class="badge bg-dark rounded-pill">Fashion & Design</span>
 					  	<span class="badge bg-dark rounded-pill">Video Games</span>
 			  		</div>
 			  	</div>
