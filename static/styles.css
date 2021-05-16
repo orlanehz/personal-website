@@ -56,13 +56,12 @@ main
 
 .hook
 {
-  color: rgba(255, 255, 255, 1);
-  background-color: rgb(0, 0, 0);
+  
 }
 
 .hook hr
 {
-  background-color: rgb(0, 0, 0);
+  background-color: black;
   height: -1px;
   /*opacity: 1;*/
 }
