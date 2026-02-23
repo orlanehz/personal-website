@@ -1,3 +1,10 @@
+## Archived repository
+
+This repository contains my **first personal portfolio website**, built in **2021**.
+
+It is now **archived** and kept for **historical and learning purposes** only.  
+The codebase is no longer maintained and does not reflect my current skills or practices.
+
 # Website
 > Building a portfolio website from scratch to showcase my data science projects. 
 
